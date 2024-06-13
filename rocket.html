@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="./rocket style.css">
+    
+</head>
+<body>
+    <!-- start header -->
+    <header class="mt-5">
+        <nav class="navbar navbar-expand-lg align-items-center">
+                <div class="container darknavbar rounded py-4 d-flex justify-content-between">
+                    <button type="button" class="navbar-toggler text-bg-secondary" data-bs-toggle="offcanvas" data-bs-target="#mynavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <a href="#" class="navbar-brand w-50 pe-5 me-5 me-md-0 pe-md-0 d-flex justify-content-center"><svg width="203" height="46" viewBox="0 0 203 46" fill="none" xmlns="http://www.w3.org/2000/svg" class=" img-fluid d-md-flex">
+                        <path d="M56.7434 30.6068L50.6089 24.5795H42.3797V30.6068H38.7888V9.56836H54.125C57.6037 9.56836 60.5587 13.0179 60.5587 17.074C60.5587 20.3719 58.5388 23.4044 55.7708 24.3142L55.4716 24.4279L61.7183 30.6447H56.7434V30.6068ZM42.3797 20.5235H53.9754C55.5838 20.5235 57.0052 18.8935 57.0052 17.036C57.0052 15.1407 55.6212 13.5865 53.9754 13.5865H42.3797V20.5235Z" fill="white" class="d-none d-md-flex"></path>
+                        <path d="M75.448 31.0177C68.0418 31.0177 63.7776 27.227 63.7776 20.5933V19.5319C63.7776 12.8981 68.0418 9.10742 75.448 9.10742C82.8542 9.10742 87.1184 12.8981 87.1184 19.5319V20.5933C87.1184 27.227 82.8542 31.0177 75.448 31.0177ZM75.448 13.3909C71.2586 13.3909 67.3685 14.1491 67.3685 19.6456V20.5174C67.3685 26.014 71.2586 26.7721 75.448 26.7721C79.4504 26.7721 83.5649 26.014 83.5649 20.5174V19.6456C83.5649 14.1112 79.4504 13.3909 75.448 13.3909Z" fill="white" class="d-none d-md-flex"></path>
+                        <path d="M101.743 31.0177C94.3364 31.0177 90.0723 27.227 90.0723 20.5933V19.5319C90.0723 12.8981 94.3364 9.10742 101.743 9.10742C109.149 9.10742 113.413 12.8981 113.413 19.5319V20.5933C113.413 27.227 109.186 31.0177 101.743 31.0177ZM101.743 13.3909C97.5533 13.3909 93.6632 14.1491 93.6632 19.6456V20.5174C93.6632 26.014 97.5533 26.7721 101.743 26.7721C105.745 26.7721 109.86 26.014 109.86 20.5174V19.6456C109.86 14.1112 105.782 13.3909 101.743 13.3909Z" fill="white" class="d-none d-md-flex"></path>
+                        <path d="M191.441 30.6068V13.8139H183.511V9.56836H202.962V13.8139H195.032V30.6068H191.441Z" fill="white" class="d-none d-md-flex"></path>
+                        <path d="M128.003 30.944C124.524 30.944 116.445 29.9205 116.445 20.5954V19.4961C116.445 10.171 124.524 9.14746 128.003 9.14746C133.352 9.14746 135.372 10.2468 135.746 10.5121V14.0375C134.885 13.7342 131.893 12.7865 128.003 12.7865C122.916 12.7865 120.223 15.1368 120.223 19.6098V20.5196C120.223 24.9926 122.916 27.3428 128.003 27.3428C131.893 27.3428 134.885 26.3952 135.746 26.0919V29.6173C135.372 29.8447 133.352 30.944 128.003 30.944Z" fill="white" class="d-none d-md-flex"></path>
+                        <path d="M153.475 30.4963L142.964 20.6405V30.4963H139.187V9.64746H142.964V19.6928L153.251 9.64746L159.348 9.64746L148.239 20.0719L159.984 30.4963H153.475Z" fill="white" class="d-none d-md-flex"></path>
+                        <path d="M162.152 30.4963V9.64746H180.593V13.2107H165.93V18.3661H179.508V21.7398H165.93V26.8952H180.593V30.4963H162.152Z" fill="white" class="d-none d-md-flex"></path>
+                        <path d="M200.232 5.17373H199.259V7.44816H199.035V5.17373H198.025V4.94629H200.269V5.17373H200.232Z" fill="white" class="d-none d-md-flex"></path>
+                        <path d="M202.738 4.94629H203V7.44816H202.776V5.74234C202.776 5.70443 202.776 5.59071 202.776 5.36327C202.551 5.85606 202.289 6.38676 201.953 6.95537H201.728C201.392 6.42467 201.092 5.89397 200.868 5.36327C200.868 5.43908 200.868 5.59071 200.868 5.74234V7.44816H200.644V4.94629H200.905C201.13 5.47699 201.429 6.0835 201.803 6.72792C202.215 6.0835 202.514 5.47699 202.738 4.94629Z" fill="white" class="d-none d-md-flex"></path>
+                        <path d="M14.4049 45.0127L9.16821 37.2796L14.4049 31.9727L19.6042 37.2796L14.4049 45.0127Z" fill="#FF8429"></path>
+                        <path d="M28.802 15.5175L28.802 33.0306L21.6202 27.4961C21.6202 27.4961 22.4057 20.6729 22.5553 15.4796C22.6301 12.9019 20.2736 10.7412 14.401 7.82237C8.56579 10.7791 6.20926 12.9398 6.28407 15.5175C6.39629 20.6729 7.2192 27.534 7.2192 27.534L0 33.0306L0 15.5175C0 12.4091 1.30918 9.604 3.85274 7.21586C5.64819 5.51004 8.11693 3.91795 11.8949 2.0605L14.4384 0.80957L16.982 2.0605C20.7225 3.91795 23.2286 5.51004 25.0241 7.21586C27.5302 9.604 28.802 12.4091 28.802 15.5175Z" fill="#E81C4D"></path>
+                        </svg></a>
+                        <input type="text" class="form-control w-50 d-none d-lg-block mx-lg-auto" placeholder="دنبال چی میگردی؟">
+                        <button class=" me-lg-auto px-lg-2 d-none d-lg-block"><i class="bi bi-circle-half"></i></button>
+                        <div class="btn-group">
+                            <button class="btn btn-primary d-block d-md-none"><span class="d-flex d-md-none"><i class="bi bi-arrow-right-square"></i></span></button>
+                            <button class="btn bg-success rounded-start-3 text-white d-none d-md-flex">ورود       <i class="bi bi-box-arrow-in-right"></i></button>
+                            <button class="btn btn bg-primary text-white rounded d-none d-md-flex">عضویت  <i class="bi bi-person-plus-fill"></i></button>
+                        </div>
+            </div>
+        </nav>
+        <nav class="navbar navbar-expand-lg align-items-center">
+            <div class="container lightnavbar py-lg-4 rounded-end-4 rounded-start-4 d-none d-lg-block">
+                <ul class="navbar-nav justify-content-center">
+                    <li class="nav-item"><a href="#" class="nav-link text-white px-4">راکت</a></li>
+                    <li class="nav-item dropdown"><a href="#" class="nav-link text-white px-4 dropdown-toggle" data-bs-toggle="dropdown">دوره های اموزشی</a>
+                    <ul class="dropdown-menu darknavbar">
+                        <li><a href="#" class="dropdown-item py-3 text-white bg-transparent">دوره های اموزشی</a></li>
+                        <li><a href="#" class="dropdown-item py-3 text-white bg-transparent">پیشرفت من</a></li>
+                        <li><a href="#" class="dropdown-item py-3 text-white bg-transparent">گواهی پایان دوره</a></li>
+                        <li><a href="#" class="dropdown-item py-3 text-white bg-transparent">مسیر یادگیری</a></li>
+                        <li><a href="#" class="dropdown-item py-3 text-white bg-transparent">دوره های رایگان</a></li>
+                    </ul>
+                    </li>
+                    <li class="nav-item"><a href="#" class="nav-link text-white px-4">پرسش و پاسخ ها</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-white px-4">مقالات</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-white px-4">راکت کست</a></li>
+                    <li class="nav-item dropdown"><a href="#" class="nav-link text-white px-4 dropdown-toggle" data-bs-toggle="dropdown">لینک های مفید</a>
+                    <ul class="dropdown-menu darknavbar">
+                        <li><a href="#" class="dropdown-item py-3 text-white bg-transparent">کانال تلگرام</a></li>
+                        <li><a href="#" class="dropdown-item py-3 text-white bg-transparent">سوالات متداول</a></li>
+                        <li><a href="#" class="dropdown-item py-3 text-white bg-transparent">درباره ما</a></li>
+                        <li><a href="#" class="dropdown-item py-3 text-white bg-transparent">ارتباط با ما</a></li>
+                        <li><a href="#" class="dropdown-item py-3 text-white bg-transparent">همکاری با ما</a></li>
+                    </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="offcanvas offcanvas-start darknavbar" id="mynavbar">
+            <div class="offcanvas-header d-block" style="direction: ltr;">
+                <button class="btn-close bg-secondary mb-3" data-bs-dismiss="offcanvas"></button>  
+                <a href="#" class="d-flex justify-content-center w-100"><svg  width="203" height="46" viewBox="0 0 203 46" fill="none" xmlns="http://www.w3.org/2000/svg" class="sm:hidden inline-block sm:ml-0 -ml-6">
+                    <path d="M56.7434 30.6068L50.6089 24.5795H42.3797V30.6068H38.7888V9.56836H54.125C57.6037 9.56836 60.5587 13.0179 60.5587 17.074C60.5587 20.3719 58.5388 23.4044 55.7708 24.3142L55.4716 24.4279L61.7183 30.6447H56.7434V30.6068ZM42.3797 20.5235H53.9754C55.5838 20.5235 57.0052 18.8935 57.0052 17.036C57.0052 15.1407 55.6212 13.5865 53.9754 13.5865H42.3797V20.5235Z" fill="white"></path>
+                    <path d="M75.448 31.0177C68.0418 31.0177 63.7776 27.227 63.7776 20.5933V19.5319C63.7776 12.8981 68.0418 9.10742 75.448 9.10742C82.8542 9.10742 87.1184 12.8981 87.1184 19.5319V20.5933C87.1184 27.227 82.8542 31.0177 75.448 31.0177ZM75.448 13.3909C71.2586 13.3909 67.3685 14.1491 67.3685 19.6456V20.5174C67.3685 26.014 71.2586 26.7721 75.448 26.7721C79.4504 26.7721 83.5649 26.014 83.5649 20.5174V19.6456C83.5649 14.1112 79.4504 13.3909 75.448 13.3909Z" fill="white"></path>
+                    <path d="M101.743 31.0177C94.3364 31.0177 90.0723 27.227 90.0723 20.5933V19.5319C90.0723 12.8981 94.3364 9.10742 101.743 9.10742C109.149 9.10742 113.413 12.8981 113.413 19.5319V20.5933C113.413 27.227 109.186 31.0177 101.743 31.0177ZM101.743 13.3909C97.5533 13.3909 93.6632 14.1491 93.6632 19.6456V20.5174C93.6632 26.014 97.5533 26.7721 101.743 26.7721C105.745 26.7721 109.86 26.014 109.86 20.5174V19.6456C109.86 14.1112 105.782 13.3909 101.743 13.3909Z" fill="white"></path>
+                    <path d="M191.441 30.6068V13.8139H183.511V9.56836H202.962V13.8139H195.032V30.6068H191.441Z" fill="white"></path>
+                    <path d="M128.003 30.944C124.524 30.944 116.445 29.9205 116.445 20.5954V19.4961C116.445 10.171 124.524 9.14746 128.003 9.14746C133.352 9.14746 135.372 10.2468 135.746 10.5121V14.0375C134.885 13.7342 131.893 12.7865 128.003 12.7865C122.916 12.7865 120.223 15.1368 120.223 19.6098V20.5196C120.223 24.9926 122.916 27.3428 128.003 27.3428C131.893 27.3428 134.885 26.3952 135.746 26.0919V29.6173C135.372 29.8447 133.352 30.944 128.003 30.944Z" fill="white"></path>
+                    <path d="M153.475 30.4963L142.964 20.6405V30.4963H139.187V9.64746H142.964V19.6928L153.251 9.64746L159.348 9.64746L148.239 20.0719L159.984 30.4963H153.475Z" fill="white"></path>
+                    <path d="M162.152 30.4963V9.64746H180.593V13.2107H165.93V18.3661H179.508V21.7398H165.93V26.8952H180.593V30.4963H162.152Z" fill="white"></path>
+                    <path d="M200.232 5.17373H199.259V7.44816H199.035V5.17373H198.025V4.94629H200.269V5.17373H200.232Z" fill="white"></path>
+                    <path d="M202.738 4.94629H203V7.44816H202.776V5.74234C202.776 5.70443 202.776 5.59071 202.776 5.36327C202.551 5.85606 202.289 6.38676 201.953 6.95537H201.728C201.392 6.42467 201.092 5.89397 200.868 5.36327C200.868 5.43908 200.868 5.59071 200.868 5.74234V7.44816H200.644V4.94629H200.905C201.13 5.47699 201.429 6.0835 201.803 6.72792C202.215 6.0835 202.514 5.47699 202.738 4.94629Z" fill="white"></path>
+                    <path d="M14.4049 45.0127L9.16821 37.2796L14.4049 31.9727L19.6042 37.2796L14.4049 45.0127Z" fill="#FF8429"></path>
+                    <path d="M28.802 15.5175L28.802 33.0306L21.6202 27.4961C21.6202 27.4961 22.4057 20.6729 22.5553 15.4796C22.6301 12.9019 20.2736 10.7412 14.401 7.82237C8.56579 10.7791 6.20926 12.9398 6.28407 15.5175C6.39629 20.6729 7.2192 27.534 7.2192 27.534L0 33.0306L0 15.5175C0 12.4091 1.30918 9.604 3.85274 7.21586C5.64819 5.51004 8.11693 3.91795 11.8949 2.0605L14.4384 0.80957L16.982 2.0605C20.7225 3.91795 23.2286 5.51004 25.0241 7.21586C27.5302 9.604 28.802 12.4091 28.802 15.5175Z" fill="#E81C4D"></path>
+                    </svg></a>  
+            </div>
+            <div class="offcanvas-body">
+                <input type="text" class="form-control w-75 mx-auto my-md-4" placeholder="دنبال چی میگردی؟"><hr class="text-white"><br>
+                <span class="text-white my-md-5 p-md-5 fw-bold"><i class="bi bi-circle-half mx-2 px-1 fs-4 align-items-center"></i>دارک مود خودکار</span> <br><br><hr class="text-white">
+                <ul class="navbar-nav justify-content-center">
+                    <li class="nav-item"><a href="#" class="nav-link text-white px-4 fw-bold"><i class="bi bi-house px-2 fs-3"></i>راکت</a></li>
+
+                    
+                    <div class="accordion accordion-flush" id="accordion-parent">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed darknavbar text-white"  data-bs-toggle="collapse" data-bs-target="#item-1"><i class="bi bi-play-btn px-2 fs-3"></i>دوره های اموزشی</button>
+                            </h2>
+                        </div>
+                        <div id="item-1" class="accordion-collapse collapse" data-bs-parent="#accordion-parent">
+                            <div class="accordion-body">
+                                <li><a href="#" class="dropdown-item py-3 text-white bg-transparent">دوره های اموزشی</a></li>
+                                <li><a href="#" class="dropdown-item py-3 text-white bg-transparent">پیشرفت من</a></li>
+                                <li><a href="#" class="dropdown-item py-3 text-white bg-transparent">گواهی پایان دوره</a></li>
+                                <li><a href="#" class="dropdown-item py-3 text-white bg-transparent">مسیر یادگیری</a></li>
+                                <li><a href="#" class="dropdown-item py-3 text-white bg-transparent">دوره های رایگان</a></li>
+                            </div>
+                        </div>
+                    </div>
+                    <li class="nav-item"><a href="#" class="nav-link text-white px-4 fw-bold"><i class="bi bi-chat-text px-2 align-items-center fs-3"></i>پرسش و پاسخ ها</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-white px-4 fw-bold"><i class="bi bi-book-half px-2 align-items-center fs-3"></i>مقالات</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-white px-4 fw-bold"><i class="bi bi-mic px-2 align-items-center fs-3"></i>راکت کست</a></li>
+                    <div class="accordion accordion-flush" id="accordion-parent-1">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed darknavbar text-white" data-bs-toggle="collapse" data-bs-target="#item-2"><i class="bi bi-link-45deg px-2 fs-3"></i>لینک های مفید</button>
+                            </h2>
+                        </div>
+                        <div class="collapse accordion-collapse" id="item-2" data-bs-parent="#accordion-parent">
+                            <div class="accordion-body">
+                                <li><a href="#" class="dropdown-item py-3 text-white bg-transparent">کانال تلگرام</a></li>
+                                <li><a href="#" class="dropdown-item py-3 text-white bg-transparent">سوالات متداول</a></li>
+                                <li><a href="#" class="dropdown-item py-3 text-white bg-transparent">درباره ما</a></li>
+                                <li><a href="#" class="dropdown-item py-3 text-white bg-transparent">ارتباط با ما</a></li>
+                                <li><a href="#" class="dropdown-item py-3 text-white bg-transparent">همکاری با ما</a></li>
+                            </div>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- end header -->
+
+    <!-- start content -->
+     <section class="pt-5">
+        <div class="container-fluid">
+            <div class="row text-center text-xl-start">
+                <div class="col-xl-6 order-2 order-xl-0">
+                    <h1 class="display-5 text-white fw-bolder  text-center text-xl-start py-2 py-lg-0 lh-sm text-wrap mt-5"> داستان برنامه نویس شدنت از اینجا شروع میشه!</h1>
+                    <p class=" my-4 fs-4 text-white text-center text-xl-start">یادگیری برنامه‌نویسی آرزو نیست، فقط نیاز هست، تلاش و تمرین داشته باشید، بقیه‌اش با راکت</p>
+                    <a href="#" class="btn btn-primary btn-outline-secondary text-white  py-3 px-5 fw-bold border-0 mb-3">شروع یادگیری برنامه نویسی<i class="bi bi-caret-left-fill"></i></a>
+                    <ul class="list-group list-group-horizontal-sm pt-md-2 pt-1 mx-auto text-lg-start text-center">
+                        <li class="list-group-item text-white fs-5 my-2 me-md-auto fw-bolder"><i class="bi bi-journal-code px-1 px-lg-2"></i>بیش از 80 دوره اموزشی</li>
+                        <li class="list-group-item text-white fs-5 my-2 me-md-auto fw-bolder"><i class="bi bi-credit-card px-1 px-lg-3"></i>ضمانت برگشت وجه</li>
+                    </ul>
+                    <ul class="list-group list-group-horizontal-sm text-lg-start text-center">
+                        <li class="list-group-item text-white fs-5 my-2 me-md-auto fw-bolder"><i class="bi bi-pencil px-lg-2 px-1"></i>یادگیری با تمرین وازمون</li>
+                        <li class="list-group-item text-white fs-5 my-2 me-md-auto fw-bolder"><i class="bi bi-telephone px-lg-2 px-1"></i>پشتیبانی 24ساعته</li>
+                    </ul>
+                </div>
+                <div class="col-xl-6 order-1 order-xl-0 d-flex justify-content-center">
+                    <img src="https://cdn.dribbble.com/users/1853242/screenshots/15848664/media/1848f5a619c2ddcaf25f2464a316bc4f.png?resize=768x576&vertical=center" class="img-fluid rounded-pill" alt="">
+                </div>
+            </div>
+        </div>
+     </section>
+     <!-- end content -->
+
+     <!-- start card section -->
+     <section class="my-5">
+        <div class="container-xxl">
+            <div class="row align-items-center">
+                <div class="col-md-6"> <h1 class="display-6 text-white fw-bolder text-md-start my-4">آخرین دوره ها 
+                </h1></div>
+                <div class="col-md-6 text-end"><a href="#" class="fs-4 nav-link fw-normal hover-a ms-auto me-lg-0 text-white">مشاهده همه دوره ها<i class="bi bi-caret-left-fill"></i></a></div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-lg-4 col-md-6 mb-5 mb-md-0 col-xl-3">
+                    <div class="card h-100 px-3 card-bg position-relative">
+                        <img src="https://static.roocket.ir/images/cover/2023/12/1/9b04K1DH2DpNew697kBVLIJ9bdeIISvWAUSb3nW6.jpg" alt="" class="rounded card-img-top position-absolute-img">
+                    <span class="text-primary px-0"><i class="bi bi-dot"></i>درحال برگزاری</span>
+                        <div class="card-body px-0 d-flex flex-column justify-content-between">
+                        <h6 class="fs-5 text-white fw-bold">ساخت ربات تلگرام با لاراول</h6>
+                        <p class="card-text text-white lh-lg fw-normal text-sm">ساخت ربات تلگرام با لاراول کار سختی نیست، البته اگر شما راه درست انجام اینکار را بلد باشید، در طی این دوره موارد مختلف راه‌اندازی ربات تلگرامی با لارا...</p>
+                    <span class="text-white fw-semibold text-13"><i class="bi bi-star-fill text-warning px-1"></i>دسترسی رایگان برای اعضای ویژه</span>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-center justify-content-center">
+                            <span class="rounded bg-secondary mt-2 text-white d-flex"><i class="bi bi-clock"></i>03:40:50</span>
+                            <button class="btn fw-lighter red-dark text-danger mt-2 p-0 ms-1 d-flex"><i class="bi bi-heart"></i>21</button>
+                        </div>
+                        <span class="text-white fs-2 fw-bold d-flex align-items-center">790,000<svg class="mr-1 " width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="text-gray-880 dark:text-white" d="M1.14878 6.91843C1.44428 6.91843 1.70285 6.87142 1.92447 6.77739C2.15282 6.68337 2.34422 6.55577 2.49869 6.39458C2.65316 6.2334 2.77069 6.04535 2.85128 5.83044C2.93187 5.62224 2.97888 5.40062 2.99231 5.16556H1.98492C1.6424 5.16556 1.36033 5.12862 1.1387 5.05474C0.917077 4.98087 0.742461 4.87341 0.614858 4.73238C0.487254 4.59134 0.396588 4.42344 0.34286 4.22868C0.295849 4.0272 0.272343 3.80221 0.272343 3.55372C0.272343 3.29852 0.309281 3.05674 0.383156 2.8284C0.457032 2.60005 0.564488 2.39857 0.705523 2.22396C0.846559 2.04934 1.02117 1.91167 1.22937 1.81093C1.44428 1.70347 1.68941 1.64974 1.96477 1.64974C2.1864 1.64974 2.39795 1.68668 2.59943 1.76056C2.80091 1.83443 2.97888 1.95196 3.13335 2.11315C3.28782 2.26761 3.40871 2.47245 3.49601 2.72766C3.59004 2.97615 3.63705 3.27837 3.63705 3.63431V4.47045H4.60415C4.68474 4.47045 4.73847 4.50068 4.76533 4.56112C4.79891 4.61485 4.8157 4.6988 4.8157 4.81297C4.8157 4.93386 4.79891 5.02452 4.76533 5.08497C4.73847 5.13869 4.68474 5.16556 4.60415 5.16556H3.6169C3.60347 5.49464 3.53631 5.80693 3.41542 6.10244C3.30125 6.39794 3.14007 6.65651 2.93187 6.87813C2.72368 7.09976 2.47518 7.27438 2.1864 7.40198C1.89761 7.5363 1.57188 7.60346 1.20922 7.60346H0.141381L0.0809373 6.91843H1.14878ZM0.896929 3.51343C0.896929 3.68133 0.913719 3.82572 0.947299 3.94661C0.987594 4.0675 1.0514 4.16823 1.1387 4.24883C1.23273 4.3227 1.35697 4.37979 1.51144 4.42008C1.66591 4.45366 1.86067 4.47045 2.09573 4.47045H3.00239V3.71491C3.00239 3.21792 2.90501 2.86198 2.71024 2.64707C2.51548 2.43215 2.24684 2.3247 1.90433 2.3247C1.58196 2.3247 1.33347 2.43215 1.15885 2.64707C0.984237 2.86198 0.896929 3.15076 0.896929 3.51343ZM6.26895 4.47045C6.35626 4.47045 6.41335 4.50068 6.44021 4.56112C6.47379 4.61485 6.49058 4.6988 6.49058 4.81297C6.49058 4.93386 6.47379 5.02452 6.44021 5.08497C6.41335 5.13869 6.35626 5.16556 6.26895 5.16556H4.60675C4.51944 5.16556 4.46235 5.13869 4.43549 5.08497C4.40191 5.03124 4.38512 4.94729 4.38512 4.83312C4.38512 4.71223 4.40191 4.62156 4.43549 4.56112C4.46235 4.50068 4.51944 4.47045 4.60675 4.47045H6.26895ZM7.93155 4.47045C8.01886 4.47045 8.07594 4.50068 8.10281 4.56112C8.13639 4.61485 8.15318 4.6988 8.15318 4.81297C8.15318 4.93386 8.13639 5.02452 8.10281 5.08497C8.07594 5.13869 8.01886 5.16556 7.93155 5.16556H6.26935C6.18204 5.16556 6.12495 5.13869 6.09809 5.08497C6.06451 5.03124 6.04772 4.94729 6.04772 4.83312C6.04772 4.71223 6.06451 4.62156 6.09809 4.56112C6.12495 4.50068 6.18204 4.47045 6.26935 4.47045H7.93155ZM9.59415 4.47045C9.68146 4.47045 9.73854 4.50068 9.76541 4.56112C9.79899 4.61485 9.81578 4.6988 9.81578 4.81297C9.81578 4.93386 9.79899 5.02452 9.76541 5.08497C9.73854 5.13869 9.68146 5.16556 9.59415 5.16556H7.93194C7.84464 5.16556 7.78755 5.13869 7.76069 5.08497C7.72711 5.03124 7.71032 4.94729 7.71032 4.83312C7.71032 4.71223 7.72711 4.62156 7.76069 4.56112C7.78755 4.50068 7.84464 4.47045 7.93194 4.47045H9.59415ZM11.2567 4.47045C11.3441 4.47045 11.4011 4.50068 11.428 4.56112C11.4616 4.61485 11.4784 4.6988 11.4784 4.81297C11.4784 4.93386 11.4616 5.02452 11.428 5.08497C11.4011 5.13869 11.3441 5.16556 11.2567 5.16556H9.59454C9.50723 5.16556 9.45015 5.13869 9.42328 5.08497C9.3897 5.03124 9.37291 4.94729 9.37291 4.83312C9.37291 4.71223 9.3897 4.62156 9.42328 4.56112C9.45015 4.50068 9.50723 4.47045 9.59454 4.47045H11.2567ZM12.1638 4.47045C12.4257 4.47045 12.6339 4.39994 12.7884 4.2589C12.9496 4.11787 13.0302 3.9231 13.0302 3.67461V2.2844H13.685V3.67461C13.685 4.15144 13.5506 4.52082 13.282 4.78275C13.0201 5.03795 12.6608 5.16556 12.2041 5.16556H11.2571C11.1698 5.16556 11.1127 5.13869 11.0859 5.08497C11.0523 5.03124 11.0355 4.94729 11.0355 4.83312C11.0355 4.71223 11.0523 4.62156 11.0859 4.56112C11.1127 4.50068 11.1698 4.47045 11.2571 4.47045H12.1638ZM13.7857 0.994934H12.9798V0.279683H13.7857V0.994934ZM12.5063 0.994934H11.7004V0.279683H12.5063V0.994934ZM5.64177 12.9641C5.64177 13.3267 5.58468 13.6659 5.47051 13.9815C5.35634 14.3039 5.1918 14.5826 4.97689 14.8177C4.76198 15.0595 4.50005 15.2509 4.19112 15.3919C3.8889 15.5329 3.54638 15.6035 3.16357 15.6035H2.56921C1.81702 15.6035 1.23273 15.3718 0.816337 14.9084C0.399946 14.445 0.191751 13.8103 0.191751 13.0044V11.2414H0.836485V12.9842C0.836485 13.273 0.870065 13.5349 0.937225 13.77C1.0111 14.0051 1.12191 14.2065 1.26967 14.3744C1.42413 14.549 1.61554 14.6834 1.84388 14.7774C2.07223 14.8714 2.34758 14.9184 2.66995 14.9184H3.1132C3.42885 14.9184 3.70421 14.8647 3.93927 14.7572C4.17433 14.6565 4.36909 14.5188 4.52356 14.3442C4.68474 14.1696 4.80227 13.9648 4.87615 13.7297C4.95674 13.4946 4.99703 13.2495 4.99703 12.9943V10.2844H5.64177V12.9641ZM3.21394 10.0628H2.36773V9.32738H3.21394V10.0628ZM8.24526 13.1656C8.07064 13.1656 7.90274 13.1421 7.74156 13.095C7.58038 13.0413 7.43598 12.954 7.30838 12.8331C7.18749 12.7122 7.09011 12.5544 7.01624 12.3596C6.94236 12.1582 6.90542 11.9097 6.90542 11.6142V6.9197H7.56023V11.4933C7.56023 11.7754 7.62067 12.0104 7.74156 12.1985C7.86916 12.3798 8.074 12.4705 8.35607 12.4705H8.52733C8.67508 12.4705 8.74896 12.5846 8.74896 12.813C8.74896 13.048 8.67508 13.1656 8.52733 13.1656H8.24526ZM8.69324 12.4705C8.95516 12.4705 9.15328 12.4067 9.2876 12.279C9.42192 12.1514 9.48908 11.9802 9.48908 11.7653V11.3825C9.48908 10.7982 9.63683 10.3415 9.93233 10.0124C10.2346 9.68332 10.6509 9.51878 11.1815 9.51878C11.4569 9.51878 11.6986 9.56243 11.9068 9.64974C12.115 9.73705 12.2863 9.8613 12.4206 10.0225C12.5616 10.1837 12.6657 10.3751 12.7329 10.5967C12.8001 10.8183 12.8336 11.0635 12.8336 11.3321C12.8336 11.9097 12.6825 12.3596 12.3803 12.682C12.0781 13.0044 11.6651 13.1656 11.1412 13.1656C10.8726 13.1656 10.614 13.1152 10.3655 13.0144C10.117 12.907 9.92226 12.7189 9.78123 12.4503C9.72078 12.6048 9.64691 12.729 9.5596 12.823C9.47229 12.9171 9.38162 12.9909 9.2876 13.0447C9.19358 13.0917 9.09284 13.1253 8.98538 13.1454C8.88464 13.1588 8.78726 13.1656 8.69324 13.1656H8.53205C8.44475 13.1656 8.38766 13.1387 8.3608 13.085C8.32722 13.0312 8.31043 12.9473 8.31043 12.8331C8.31043 12.7122 8.32722 12.6216 8.3608 12.5611C8.38766 12.5007 8.44475 12.4705 8.53205 12.4705H8.69324ZM12.1889 11.3925C12.1889 11.0433 12.1117 10.7612 11.9572 10.5463C11.8027 10.3247 11.5375 10.2139 11.1614 10.2139C10.4629 10.2139 10.1137 10.6202 10.1137 11.4328C10.1137 11.7754 10.2077 12.0339 10.3957 12.2085C10.5905 12.3831 10.839 12.4705 11.1412 12.4705C11.4837 12.4705 11.7423 12.3764 11.9169 12.1884C12.0982 12.0003 12.1889 11.7351 12.1889 11.3925Z" fill="currentColor"></path>
+                        </svg></span>
+                    </div>
+                    </div>
+                    <div class="card-footer border-white">
+                        <a href="#" class="nav-link text-primary d-flex justify-content-center fw-bold">مشاهده اطلاعات دوره<i class="bi bi-caret-left-fill"></i></a>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-5 mb-md-0 col-xl-3">
+                    <div class="card h-100 px-3 card-bg position-relative">
+                        <img src="https://static.roocket.ir/images/cover/2024/3/1/aE9nP6wnSnB9ib0M1Q6HelLDM2UZtBf1Bo5LAUhu.jpg" alt="" class="rounded card-img-top position-absolute-img">
+                    <span class="text-primary px-0"><i class="bi bi-dot"></i>تکمیل ضبط</span>
+                        <div class="card-body px-0 d-flex flex-column justify-content-between">
+                        <h6 class="fs-5 text-white fw-bold">آموزش پیشرفته React</h6>
+                        <p class="card-text text-white lh-lg fw-normal text-sm">آموزش پیشرفته React دوره‌ای است که در آن شما به صورت عمیق‌تر و حرفه‌ای‌تر با ویژگی React آشنا می‌شوید و از آن‌ها به صورت عملی در پروژه‌های خود استفاده...</p>
+                    <span class="text-white fw-semibold text-13"><i class="bi bi-star-fill text-warning px-1"></i>دسترسی رایگان برای اعضای ویژه</span>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-center justify-content-center">
+                            <span class="rounded bg-secondary mt-2 text-white d-flex"><i class="bi bi-clock"></i>06:48:04</span>
+                            <button class="btn fw-lighter red-dark text-danger mt-2 p-0 ms-1 d-flex"><i class="bi bi-heart"></i>31</button>
+                        </div>
+                        <span class="text-white fs-2 fw-bold d-flex align-items-center">790,000<svg class="mr-1 " width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="text-gray-880 dark:text-white" d="M1.14878 6.91843C1.44428 6.91843 1.70285 6.87142 1.92447 6.77739C2.15282 6.68337 2.34422 6.55577 2.49869 6.39458C2.65316 6.2334 2.77069 6.04535 2.85128 5.83044C2.93187 5.62224 2.97888 5.40062 2.99231 5.16556H1.98492C1.6424 5.16556 1.36033 5.12862 1.1387 5.05474C0.917077 4.98087 0.742461 4.87341 0.614858 4.73238C0.487254 4.59134 0.396588 4.42344 0.34286 4.22868C0.295849 4.0272 0.272343 3.80221 0.272343 3.55372C0.272343 3.29852 0.309281 3.05674 0.383156 2.8284C0.457032 2.60005 0.564488 2.39857 0.705523 2.22396C0.846559 2.04934 1.02117 1.91167 1.22937 1.81093C1.44428 1.70347 1.68941 1.64974 1.96477 1.64974C2.1864 1.64974 2.39795 1.68668 2.59943 1.76056C2.80091 1.83443 2.97888 1.95196 3.13335 2.11315C3.28782 2.26761 3.40871 2.47245 3.49601 2.72766C3.59004 2.97615 3.63705 3.27837 3.63705 3.63431V4.47045H4.60415C4.68474 4.47045 4.73847 4.50068 4.76533 4.56112C4.79891 4.61485 4.8157 4.6988 4.8157 4.81297C4.8157 4.93386 4.79891 5.02452 4.76533 5.08497C4.73847 5.13869 4.68474 5.16556 4.60415 5.16556H3.6169C3.60347 5.49464 3.53631 5.80693 3.41542 6.10244C3.30125 6.39794 3.14007 6.65651 2.93187 6.87813C2.72368 7.09976 2.47518 7.27438 2.1864 7.40198C1.89761 7.5363 1.57188 7.60346 1.20922 7.60346H0.141381L0.0809373 6.91843H1.14878ZM0.896929 3.51343C0.896929 3.68133 0.913719 3.82572 0.947299 3.94661C0.987594 4.0675 1.0514 4.16823 1.1387 4.24883C1.23273 4.3227 1.35697 4.37979 1.51144 4.42008C1.66591 4.45366 1.86067 4.47045 2.09573 4.47045H3.00239V3.71491C3.00239 3.21792 2.90501 2.86198 2.71024 2.64707C2.51548 2.43215 2.24684 2.3247 1.90433 2.3247C1.58196 2.3247 1.33347 2.43215 1.15885 2.64707C0.984237 2.86198 0.896929 3.15076 0.896929 3.51343ZM6.26895 4.47045C6.35626 4.47045 6.41335 4.50068 6.44021 4.56112C6.47379 4.61485 6.49058 4.6988 6.49058 4.81297C6.49058 4.93386 6.47379 5.02452 6.44021 5.08497C6.41335 5.13869 6.35626 5.16556 6.26895 5.16556H4.60675C4.51944 5.16556 4.46235 5.13869 4.43549 5.08497C4.40191 5.03124 4.38512 4.94729 4.38512 4.83312C4.38512 4.71223 4.40191 4.62156 4.43549 4.56112C4.46235 4.50068 4.51944 4.47045 4.60675 4.47045H6.26895ZM7.93155 4.47045C8.01886 4.47045 8.07594 4.50068 8.10281 4.56112C8.13639 4.61485 8.15318 4.6988 8.15318 4.81297C8.15318 4.93386 8.13639 5.02452 8.10281 5.08497C8.07594 5.13869 8.01886 5.16556 7.93155 5.16556H6.26935C6.18204 5.16556 6.12495 5.13869 6.09809 5.08497C6.06451 5.03124 6.04772 4.94729 6.04772 4.83312C6.04772 4.71223 6.06451 4.62156 6.09809 4.56112C6.12495 4.50068 6.18204 4.47045 6.26935 4.47045H7.93155ZM9.59415 4.47045C9.68146 4.47045 9.73854 4.50068 9.76541 4.56112C9.79899 4.61485 9.81578 4.6988 9.81578 4.81297C9.81578 4.93386 9.79899 5.02452 9.76541 5.08497C9.73854 5.13869 9.68146 5.16556 9.59415 5.16556H7.93194C7.84464 5.16556 7.78755 5.13869 7.76069 5.08497C7.72711 5.03124 7.71032 4.94729 7.71032 4.83312C7.71032 4.71223 7.72711 4.62156 7.76069 4.56112C7.78755 4.50068 7.84464 4.47045 7.93194 4.47045H9.59415ZM11.2567 4.47045C11.3441 4.47045 11.4011 4.50068 11.428 4.56112C11.4616 4.61485 11.4784 4.6988 11.4784 4.81297C11.4784 4.93386 11.4616 5.02452 11.428 5.08497C11.4011 5.13869 11.3441 5.16556 11.2567 5.16556H9.59454C9.50723 5.16556 9.45015 5.13869 9.42328 5.08497C9.3897 5.03124 9.37291 4.94729 9.37291 4.83312C9.37291 4.71223 9.3897 4.62156 9.42328 4.56112C9.45015 4.50068 9.50723 4.47045 9.59454 4.47045H11.2567ZM12.1638 4.47045C12.4257 4.47045 12.6339 4.39994 12.7884 4.2589C12.9496 4.11787 13.0302 3.9231 13.0302 3.67461V2.2844H13.685V3.67461C13.685 4.15144 13.5506 4.52082 13.282 4.78275C13.0201 5.03795 12.6608 5.16556 12.2041 5.16556H11.2571C11.1698 5.16556 11.1127 5.13869 11.0859 5.08497C11.0523 5.03124 11.0355 4.94729 11.0355 4.83312C11.0355 4.71223 11.0523 4.62156 11.0859 4.56112C11.1127 4.50068 11.1698 4.47045 11.2571 4.47045H12.1638ZM13.7857 0.994934H12.9798V0.279683H13.7857V0.994934ZM12.5063 0.994934H11.7004V0.279683H12.5063V0.994934ZM5.64177 12.9641C5.64177 13.3267 5.58468 13.6659 5.47051 13.9815C5.35634 14.3039 5.1918 14.5826 4.97689 14.8177C4.76198 15.0595 4.50005 15.2509 4.19112 15.3919C3.8889 15.5329 3.54638 15.6035 3.16357 15.6035H2.56921C1.81702 15.6035 1.23273 15.3718 0.816337 14.9084C0.399946 14.445 0.191751 13.8103 0.191751 13.0044V11.2414H0.836485V12.9842C0.836485 13.273 0.870065 13.5349 0.937225 13.77C1.0111 14.0051 1.12191 14.2065 1.26967 14.3744C1.42413 14.549 1.61554 14.6834 1.84388 14.7774C2.07223 14.8714 2.34758 14.9184 2.66995 14.9184H3.1132C3.42885 14.9184 3.70421 14.8647 3.93927 14.7572C4.17433 14.6565 4.36909 14.5188 4.52356 14.3442C4.68474 14.1696 4.80227 13.9648 4.87615 13.7297C4.95674 13.4946 4.99703 13.2495 4.99703 12.9943V10.2844H5.64177V12.9641ZM3.21394 10.0628H2.36773V9.32738H3.21394V10.0628ZM8.24526 13.1656C8.07064 13.1656 7.90274 13.1421 7.74156 13.095C7.58038 13.0413 7.43598 12.954 7.30838 12.8331C7.18749 12.7122 7.09011 12.5544 7.01624 12.3596C6.94236 12.1582 6.90542 11.9097 6.90542 11.6142V6.9197H7.56023V11.4933C7.56023 11.7754 7.62067 12.0104 7.74156 12.1985C7.86916 12.3798 8.074 12.4705 8.35607 12.4705H8.52733C8.67508 12.4705 8.74896 12.5846 8.74896 12.813C8.74896 13.048 8.67508 13.1656 8.52733 13.1656H8.24526ZM8.69324 12.4705C8.95516 12.4705 9.15328 12.4067 9.2876 12.279C9.42192 12.1514 9.48908 11.9802 9.48908 11.7653V11.3825C9.48908 10.7982 9.63683 10.3415 9.93233 10.0124C10.2346 9.68332 10.6509 9.51878 11.1815 9.51878C11.4569 9.51878 11.6986 9.56243 11.9068 9.64974C12.115 9.73705 12.2863 9.8613 12.4206 10.0225C12.5616 10.1837 12.6657 10.3751 12.7329 10.5967C12.8001 10.8183 12.8336 11.0635 12.8336 11.3321C12.8336 11.9097 12.6825 12.3596 12.3803 12.682C12.0781 13.0044 11.6651 13.1656 11.1412 13.1656C10.8726 13.1656 10.614 13.1152 10.3655 13.0144C10.117 12.907 9.92226 12.7189 9.78123 12.4503C9.72078 12.6048 9.64691 12.729 9.5596 12.823C9.47229 12.9171 9.38162 12.9909 9.2876 13.0447C9.19358 13.0917 9.09284 13.1253 8.98538 13.1454C8.88464 13.1588 8.78726 13.1656 8.69324 13.1656H8.53205C8.44475 13.1656 8.38766 13.1387 8.3608 13.085C8.32722 13.0312 8.31043 12.9473 8.31043 12.8331C8.31043 12.7122 8.32722 12.6216 8.3608 12.5611C8.38766 12.5007 8.44475 12.4705 8.53205 12.4705H8.69324ZM12.1889 11.3925C12.1889 11.0433 12.1117 10.7612 11.9572 10.5463C11.8027 10.3247 11.5375 10.2139 11.1614 10.2139C10.4629 10.2139 10.1137 10.6202 10.1137 11.4328C10.1137 11.7754 10.2077 12.0339 10.3957 12.2085C10.5905 12.3831 10.839 12.4705 11.1412 12.4705C11.4837 12.4705 11.7423 12.3764 11.9169 12.1884C12.0982 12.0003 12.1889 11.7351 12.1889 11.3925Z" fill="currentColor"></path>
+                        </svg></span>
+                    </div>
+                    </div>
+                    <div class="card-footer border-white">
+                        <a href="#" class="nav-link text-primary d-flex justify-content-center fw-bold fst-normal">مشاهده اطلاعات دوره<i class="bi bi-caret-left-fill"></i></a>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mt-md-5 mt-lg-0 col-md-6 mb-5 mb-md-0 col-xl-3">
+                    <div class="card h-100 px-3 card-bg position-relative mt-md-3 mt-lg-0">
+                        <img src="https://static.roocket.ir/images/cover/2024/3/19/ctYWILBCgvB3acniqYi5iir43A8c6uhrXFLW4LO8.jpg" alt="" class="rounded card-img-top position-absolute-img">
+                    <span class="text-primary px-0"><i class="bi bi-dot"></i>تکمیل ضبط</span>
+                        <div class="card-body px-0 d-flex flex-column justify-content-between">
+                            <div>
+                                <h6 class="fs-5 text-white fw-bold">آشنایی با امکانات جدید لاراول 11</h6>
+                                <p class="card-text text-white lh-lg fw-normal text-sm">لاراول ۱۱ منتشر شد. در این دوره آموزشی با امکانات جدید لاراول ۱۱ به شکل کامل آشنا خواهید شد.</p>
+                            </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-center justify-content-center">
+                            <span class="rounded bg-secondary text-white d-flex"><i class="bi bi-clock"></i>02:04:42</span>
+                            <button class="btn fw-lighter red-dark text-danger p-0 ms-1 d-flex"><i class="bi bi-heart"></i>31</button>
+                        </div>
+                        <span class="text-primary fs-3 fw-bold d-flex align-items-center">رایگان!</span>
+                    </div>
+                    </div>
+                    <div class="card-footer border-white">
+                        <a href="#" class="nav-link text-primary d-flex justify-content-center fw-bold">مشاهده اطلاعات دوره<i class="bi bi-caret-left-fill"></i></a>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mt-md-5 mt-xl-0 col-md-6 mb-5 mb-md-0 col-xl-3">
+                    <div class="card h-100 px-3 card-bg position-relative  mt-md-3 mt-xl-0">
+                        <img src="https://static.roocket.ir/images/cover/2023/12/16/5bXkwppbwaAIC7LQPqkfr9MSFjkA04NixdFNVwZu.jpg" alt="" class="rounded card-img-top position-absolute-img">
+                    <span class="text-primary px-0"><i class="bi bi-dot"></i>تکمیل ضبط</span>
+                        <div class="card-body px-0  d-flex flex-column justify-content-between">
+                            <div>
+                                <h6 class="fs-5 text-white fw-bold lh-lg">آموزش کاربردی Restful API در لاراول</h6>
+                                <p class="card-text text-white lh-lg fw-normal text-sm">در دوره آموزشی RESTful API در لاراول شیوه پیاده‌سازی REST API در پروژه‌های لاراولی را به صورت عملی و کاربردی (براساس نیاز بازار کار) یاد خواهید گرفت.</p> 
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                            <div class="d-flex align-items-center justify-content-center">
+                                <span class="rounded bg-secondary text-white d-flex"><i class="bi bi-clock"></i>11:17:45</span>
+                                <button class="btn fw-lighter red-dark text-danger p-0 ms-1 d-flex"><i class="bi bi-heart"></i>44</button>
+                            </div>
+                            <span class="text-white fs-3 fw-bold d-flex align-items-center">790,000<svg class="mr-1 " width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path class="text-gray-880 dark:text-white" d="M1.14878 6.91843C1.44428 6.91843 1.70285 6.87142 1.92447 6.77739C2.15282 6.68337 2.34422 6.55577 2.49869 6.39458C2.65316 6.2334 2.77069 6.04535 2.85128 5.83044C2.93187 5.62224 2.97888 5.40062 2.99231 5.16556H1.98492C1.6424 5.16556 1.36033 5.12862 1.1387 5.05474C0.917077 4.98087 0.742461 4.87341 0.614858 4.73238C0.487254 4.59134 0.396588 4.42344 0.34286 4.22868C0.295849 4.0272 0.272343 3.80221 0.272343 3.55372C0.272343 3.29852 0.309281 3.05674 0.383156 2.8284C0.457032 2.60005 0.564488 2.39857 0.705523 2.22396C0.846559 2.04934 1.02117 1.91167 1.22937 1.81093C1.44428 1.70347 1.68941 1.64974 1.96477 1.64974C2.1864 1.64974 2.39795 1.68668 2.59943 1.76056C2.80091 1.83443 2.97888 1.95196 3.13335 2.11315C3.28782 2.26761 3.40871 2.47245 3.49601 2.72766C3.59004 2.97615 3.63705 3.27837 3.63705 3.63431V4.47045H4.60415C4.68474 4.47045 4.73847 4.50068 4.76533 4.56112C4.79891 4.61485 4.8157 4.6988 4.8157 4.81297C4.8157 4.93386 4.79891 5.02452 4.76533 5.08497C4.73847 5.13869 4.68474 5.16556 4.60415 5.16556H3.6169C3.60347 5.49464 3.53631 5.80693 3.41542 6.10244C3.30125 6.39794 3.14007 6.65651 2.93187 6.87813C2.72368 7.09976 2.47518 7.27438 2.1864 7.40198C1.89761 7.5363 1.57188 7.60346 1.20922 7.60346H0.141381L0.0809373 6.91843H1.14878ZM0.896929 3.51343C0.896929 3.68133 0.913719 3.82572 0.947299 3.94661C0.987594 4.0675 1.0514 4.16823 1.1387 4.24883C1.23273 4.3227 1.35697 4.37979 1.51144 4.42008C1.66591 4.45366 1.86067 4.47045 2.09573 4.47045H3.00239V3.71491C3.00239 3.21792 2.90501 2.86198 2.71024 2.64707C2.51548 2.43215 2.24684 2.3247 1.90433 2.3247C1.58196 2.3247 1.33347 2.43215 1.15885 2.64707C0.984237 2.86198 0.896929 3.15076 0.896929 3.51343ZM6.26895 4.47045C6.35626 4.47045 6.41335 4.50068 6.44021 4.56112C6.47379 4.61485 6.49058 4.6988 6.49058 4.81297C6.49058 4.93386 6.47379 5.02452 6.44021 5.08497C6.41335 5.13869 6.35626 5.16556 6.26895 5.16556H4.60675C4.51944 5.16556 4.46235 5.13869 4.43549 5.08497C4.40191 5.03124 4.38512 4.94729 4.38512 4.83312C4.38512 4.71223 4.40191 4.62156 4.43549 4.56112C4.46235 4.50068 4.51944 4.47045 4.60675 4.47045H6.26895ZM7.93155 4.47045C8.01886 4.47045 8.07594 4.50068 8.10281 4.56112C8.13639 4.61485 8.15318 4.6988 8.15318 4.81297C8.15318 4.93386 8.13639 5.02452 8.10281 5.08497C8.07594 5.13869 8.01886 5.16556 7.93155 5.16556H6.26935C6.18204 5.16556 6.12495 5.13869 6.09809 5.08497C6.06451 5.03124 6.04772 4.94729 6.04772 4.83312C6.04772 4.71223 6.06451 4.62156 6.09809 4.56112C6.12495 4.50068 6.18204 4.47045 6.26935 4.47045H7.93155ZM9.59415 4.47045C9.68146 4.47045 9.73854 4.50068 9.76541 4.56112C9.79899 4.61485 9.81578 4.6988 9.81578 4.81297C9.81578 4.93386 9.79899 5.02452 9.76541 5.08497C9.73854 5.13869 9.68146 5.16556 9.59415 5.16556H7.93194C7.84464 5.16556 7.78755 5.13869 7.76069 5.08497C7.72711 5.03124 7.71032 4.94729 7.71032 4.83312C7.71032 4.71223 7.72711 4.62156 7.76069 4.56112C7.78755 4.50068 7.84464 4.47045 7.93194 4.47045H9.59415ZM11.2567 4.47045C11.3441 4.47045 11.4011 4.50068 11.428 4.56112C11.4616 4.61485 11.4784 4.6988 11.4784 4.81297C11.4784 4.93386 11.4616 5.02452 11.428 5.08497C11.4011 5.13869 11.3441 5.16556 11.2567 5.16556H9.59454C9.50723 5.16556 9.45015 5.13869 9.42328 5.08497C9.3897 5.03124 9.37291 4.94729 9.37291 4.83312C9.37291 4.71223 9.3897 4.62156 9.42328 4.56112C9.45015 4.50068 9.50723 4.47045 9.59454 4.47045H11.2567ZM12.1638 4.47045C12.4257 4.47045 12.6339 4.39994 12.7884 4.2589C12.9496 4.11787 13.0302 3.9231 13.0302 3.67461V2.2844H13.685V3.67461C13.685 4.15144 13.5506 4.52082 13.282 4.78275C13.0201 5.03795 12.6608 5.16556 12.2041 5.16556H11.2571C11.1698 5.16556 11.1127 5.13869 11.0859 5.08497C11.0523 5.03124 11.0355 4.94729 11.0355 4.83312C11.0355 4.71223 11.0523 4.62156 11.0859 4.56112C11.1127 4.50068 11.1698 4.47045 11.2571 4.47045H12.1638ZM13.7857 0.994934H12.9798V0.279683H13.7857V0.994934ZM12.5063 0.994934H11.7004V0.279683H12.5063V0.994934ZM5.64177 12.9641C5.64177 13.3267 5.58468 13.6659 5.47051 13.9815C5.35634 14.3039 5.1918 14.5826 4.97689 14.8177C4.76198 15.0595 4.50005 15.2509 4.19112 15.3919C3.8889 15.5329 3.54638 15.6035 3.16357 15.6035H2.56921C1.81702 15.6035 1.23273 15.3718 0.816337 14.9084C0.399946 14.445 0.191751 13.8103 0.191751 13.0044V11.2414H0.836485V12.9842C0.836485 13.273 0.870065 13.5349 0.937225 13.77C1.0111 14.0051 1.12191 14.2065 1.26967 14.3744C1.42413 14.549 1.61554 14.6834 1.84388 14.7774C2.07223 14.8714 2.34758 14.9184 2.66995 14.9184H3.1132C3.42885 14.9184 3.70421 14.8647 3.93927 14.7572C4.17433 14.6565 4.36909 14.5188 4.52356 14.3442C4.68474 14.1696 4.80227 13.9648 4.87615 13.7297C4.95674 13.4946 4.99703 13.2495 4.99703 12.9943V10.2844H5.64177V12.9641ZM3.21394 10.0628H2.36773V9.32738H3.21394V10.0628ZM8.24526 13.1656C8.07064 13.1656 7.90274 13.1421 7.74156 13.095C7.58038 13.0413 7.43598 12.954 7.30838 12.8331C7.18749 12.7122 7.09011 12.5544 7.01624 12.3596C6.94236 12.1582 6.90542 11.9097 6.90542 11.6142V6.9197H7.56023V11.4933C7.56023 11.7754 7.62067 12.0104 7.74156 12.1985C7.86916 12.3798 8.074 12.4705 8.35607 12.4705H8.52733C8.67508 12.4705 8.74896 12.5846 8.74896 12.813C8.74896 13.048 8.67508 13.1656 8.52733 13.1656H8.24526ZM8.69324 12.4705C8.95516 12.4705 9.15328 12.4067 9.2876 12.279C9.42192 12.1514 9.48908 11.9802 9.48908 11.7653V11.3825C9.48908 10.7982 9.63683 10.3415 9.93233 10.0124C10.2346 9.68332 10.6509 9.51878 11.1815 9.51878C11.4569 9.51878 11.6986 9.56243 11.9068 9.64974C12.115 9.73705 12.2863 9.8613 12.4206 10.0225C12.5616 10.1837 12.6657 10.3751 12.7329 10.5967C12.8001 10.8183 12.8336 11.0635 12.8336 11.3321C12.8336 11.9097 12.6825 12.3596 12.3803 12.682C12.0781 13.0044 11.6651 13.1656 11.1412 13.1656C10.8726 13.1656 10.614 13.1152 10.3655 13.0144C10.117 12.907 9.92226 12.7189 9.78123 12.4503C9.72078 12.6048 9.64691 12.729 9.5596 12.823C9.47229 12.9171 9.38162 12.9909 9.2876 13.0447C9.19358 13.0917 9.09284 13.1253 8.98538 13.1454C8.88464 13.1588 8.78726 13.1656 8.69324 13.1656H8.53205C8.44475 13.1656 8.38766 13.1387 8.3608 13.085C8.32722 13.0312 8.31043 12.9473 8.31043 12.8331C8.31043 12.7122 8.32722 12.6216 8.3608 12.5611C8.38766 12.5007 8.44475 12.4705 8.53205 12.4705H8.69324ZM12.1889 11.3925C12.1889 11.0433 12.1117 10.7612 11.9572 10.5463C11.8027 10.3247 11.5375 10.2139 11.1614 10.2139C10.4629 10.2139 10.1137 10.6202 10.1137 11.4328C10.1137 11.7754 10.2077 12.0339 10.3957 12.2085C10.5905 12.3831 10.839 12.4705 11.1412 12.4705C11.4837 12.4705 11.7423 12.3764 11.9169 12.1884C12.0982 12.0003 12.1889 11.7351 12.1889 11.3925Z" fill="currentColor"></path>
+                            </svg></span>
+                        </div>
+                    </div>
+                    <div class="card-footer border-white">
+                        <a href="#" class="nav-link text-primary d-flex justify-content-center fw-bold">مشاهده اطلاعات دوره<i class="bi bi-caret-left-fill"></i></a>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mt-md-5 col-md-6  mb-5 mb-md-0 col-xl-3">
+                    <div class="card h-100 px-3 card-bg position-relative mt-md-3">
+                        <img src="https://static.roocket.ir/images/cover/2024/3/17/cjrvYIIKwBOgP9NlKHeWYi4bXIcwIe9UQHZNlAbs.jpg" alt="" class="rounded card-img-top position-absolute-img">
+                        <div class="d-flex align-items-center">
+                            <span class="text-primary px-0"><i class="bi bi-dot"></i>به زودی</span>
+                            <span class="text-danger px-1"><i class="bi bi-dot"></i>پیش فرض</span>
+                        </div>
+                        <div class="card-body px-0 d-flex flex-column justify-content-between">
+                        <h6 class="fs-5 text-white fw-bold">آموزش جامع Eloquent در لاراول</h6>
+                        <p class="card-text text-white lh-lg fw-normal text-sm">در دوره آموزش جامع Eloquent در لاراول از ابتدایی ترین مفاهیم تا مفاهیم پیشرفته تر و پیچیده مرتبط با Eloquent به شکل کاربردی و در قالب مثال ها و سناریو...</p>
+                        <div class="d-flex flex-column justify-content-between">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="text-danger rounded bg-white py-1 text-10 d-flex align-items-center fw-bold">پیش فروش برای خرید نقدی</span>
+                                <s class=" fs-4 text-white-50 d-flex align-items-center justify-content-between">590,000<svg class="mr-1 " width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path class="text-gray-880 dark:text-white" d="M1.14878 6.91843C1.44428 6.91843 1.70285 6.87142 1.92447 6.77739C2.15282 6.68337 2.34422 6.55577 2.49869 6.39458C2.65316 6.2334 2.77069 6.04535 2.85128 5.83044C2.93187 5.62224 2.97888 5.40062 2.99231 5.16556H1.98492C1.6424 5.16556 1.36033 5.12862 1.1387 5.05474C0.917077 4.98087 0.742461 4.87341 0.614858 4.73238C0.487254 4.59134 0.396588 4.42344 0.34286 4.22868C0.295849 4.0272 0.272343 3.80221 0.272343 3.55372C0.272343 3.29852 0.309281 3.05674 0.383156 2.8284C0.457032 2.60005 0.564488 2.39857 0.705523 2.22396C0.846559 2.04934 1.02117 1.91167 1.22937 1.81093C1.44428 1.70347 1.68941 1.64974 1.96477 1.64974C2.1864 1.64974 2.39795 1.68668 2.59943 1.76056C2.80091 1.83443 2.97888 1.95196 3.13335 2.11315C3.28782 2.26761 3.40871 2.47245 3.49601 2.72766C3.59004 2.97615 3.63705 3.27837 3.63705 3.63431V4.47045H4.60415C4.68474 4.47045 4.73847 4.50068 4.76533 4.56112C4.79891 4.61485 4.8157 4.6988 4.8157 4.81297C4.8157 4.93386 4.79891 5.02452 4.76533 5.08497C4.73847 5.13869 4.68474 5.16556 4.60415 5.16556H3.6169C3.60347 5.49464 3.53631 5.80693 3.41542 6.10244C3.30125 6.39794 3.14007 6.65651 2.93187 6.87813C2.72368 7.09976 2.47518 7.27438 2.1864 7.40198C1.89761 7.5363 1.57188 7.60346 1.20922 7.60346H0.141381L0.0809373 6.91843H1.14878ZM0.896929 3.51343C0.896929 3.68133 0.913719 3.82572 0.947299 3.94661C0.987594 4.0675 1.0514 4.16823 1.1387 4.24883C1.23273 4.3227 1.35697 4.37979 1.51144 4.42008C1.66591 4.45366 1.86067 4.47045 2.09573 4.47045H3.00239V3.71491C3.00239 3.21792 2.90501 2.86198 2.71024 2.64707C2.51548 2.43215 2.24684 2.3247 1.90433 2.3247C1.58196 2.3247 1.33347 2.43215 1.15885 2.64707C0.984237 2.86198 0.896929 3.15076 0.896929 3.51343ZM6.26895 4.47045C6.35626 4.47045 6.41335 4.50068 6.44021 4.56112C6.47379 4.61485 6.49058 4.6988 6.49058 4.81297C6.49058 4.93386 6.47379 5.02452 6.44021 5.08497C6.41335 5.13869 6.35626 5.16556 6.26895 5.16556H4.60675C4.51944 5.16556 4.46235 5.13869 4.43549 5.08497C4.40191 5.03124 4.38512 4.94729 4.38512 4.83312C4.38512 4.71223 4.40191 4.62156 4.43549 4.56112C4.46235 4.50068 4.51944 4.47045 4.60675 4.47045H6.26895ZM7.93155 4.47045C8.01886 4.47045 8.07594 4.50068 8.10281 4.56112C8.13639 4.61485 8.15318 4.6988 8.15318 4.81297C8.15318 4.93386 8.13639 5.02452 8.10281 5.08497C8.07594 5.13869 8.01886 5.16556 7.93155 5.16556H6.26935C6.18204 5.16556 6.12495 5.13869 6.09809 5.08497C6.06451 5.03124 6.04772 4.94729 6.04772 4.83312C6.04772 4.71223 6.06451 4.62156 6.09809 4.56112C6.12495 4.50068 6.18204 4.47045 6.26935 4.47045H7.93155ZM9.59415 4.47045C9.68146 4.47045 9.73854 4.50068 9.76541 4.56112C9.79899 4.61485 9.81578 4.6988 9.81578 4.81297C9.81578 4.93386 9.79899 5.02452 9.76541 5.08497C9.73854 5.13869 9.68146 5.16556 9.59415 5.16556H7.93194C7.84464 5.16556 7.78755 5.13869 7.76069 5.08497C7.72711 5.03124 7.71032 4.94729 7.71032 4.83312C7.71032 4.71223 7.72711 4.62156 7.76069 4.56112C7.78755 4.50068 7.84464 4.47045 7.93194 4.47045H9.59415ZM11.2567 4.47045C11.3441 4.47045 11.4011 4.50068 11.428 4.56112C11.4616 4.61485 11.4784 4.6988 11.4784 4.81297C11.4784 4.93386 11.4616 5.02452 11.428 5.08497C11.4011 5.13869 11.3441 5.16556 11.2567 5.16556H9.59454C9.50723 5.16556 9.45015 5.13869 9.42328 5.08497C9.3897 5.03124 9.37291 4.94729 9.37291 4.83312C9.37291 4.71223 9.3897 4.62156 9.42328 4.56112C9.45015 4.50068 9.50723 4.47045 9.59454 4.47045H11.2567ZM12.1638 4.47045C12.4257 4.47045 12.6339 4.39994 12.7884 4.2589C12.9496 4.11787 13.0302 3.9231 13.0302 3.67461V2.2844H13.685V3.67461C13.685 4.15144 13.5506 4.52082 13.282 4.78275C13.0201 5.03795 12.6608 5.16556 12.2041 5.16556H11.2571C11.1698 5.16556 11.1127 5.13869 11.0859 5.08497C11.0523 5.03124 11.0355 4.94729 11.0355 4.83312C11.0355 4.71223 11.0523 4.62156 11.0859 4.56112C11.1127 4.50068 11.1698 4.47045 11.2571 4.47045H12.1638ZM13.7857 0.994934H12.9798V0.279683H13.7857V0.994934ZM12.5063 0.994934H11.7004V0.279683H12.5063V0.994934ZM5.64177 12.9641C5.64177 13.3267 5.58468 13.6659 5.47051 13.9815C5.35634 14.3039 5.1918 14.5826 4.97689 14.8177C4.76198 15.0595 4.50005 15.2509 4.19112 15.3919C3.8889 15.5329 3.54638 15.6035 3.16357 15.6035H2.56921C1.81702 15.6035 1.23273 15.3718 0.816337 14.9084C0.399946 14.445 0.191751 13.8103 0.191751 13.0044V11.2414H0.836485V12.9842C0.836485 13.273 0.870065 13.5349 0.937225 13.77C1.0111 14.0051 1.12191 14.2065 1.26967 14.3744C1.42413 14.549 1.61554 14.6834 1.84388 14.7774C2.07223 14.8714 2.34758 14.9184 2.66995 14.9184H3.1132C3.42885 14.9184 3.70421 14.8647 3.93927 14.7572C4.17433 14.6565 4.36909 14.5188 4.52356 14.3442C4.68474 14.1696 4.80227 13.9648 4.87615 13.7297C4.95674 13.4946 4.99703 13.2495 4.99703 12.9943V10.2844H5.64177V12.9641ZM3.21394 10.0628H2.36773V9.32738H3.21394V10.0628ZM8.24526 13.1656C8.07064 13.1656 7.90274 13.1421 7.74156 13.095C7.58038 13.0413 7.43598 12.954 7.30838 12.8331C7.18749 12.7122 7.09011 12.5544 7.01624 12.3596C6.94236 12.1582 6.90542 11.9097 6.90542 11.6142V6.9197H7.56023V11.4933C7.56023 11.7754 7.62067 12.0104 7.74156 12.1985C7.86916 12.3798 8.074 12.4705 8.35607 12.4705H8.52733C8.67508 12.4705 8.74896 12.5846 8.74896 12.813C8.74896 13.048 8.67508 13.1656 8.52733 13.1656H8.24526ZM8.69324 12.4705C8.95516 12.4705 9.15328 12.4067 9.2876 12.279C9.42192 12.1514 9.48908 11.9802 9.48908 11.7653V11.3825C9.48908 10.7982 9.63683 10.3415 9.93233 10.0124C10.2346 9.68332 10.6509 9.51878 11.1815 9.51878C11.4569 9.51878 11.6986 9.56243 11.9068 9.64974C12.115 9.73705 12.2863 9.8613 12.4206 10.0225C12.5616 10.1837 12.6657 10.3751 12.7329 10.5967C12.8001 10.8183 12.8336 11.0635 12.8336 11.3321C12.8336 11.9097 12.6825 12.3596 12.3803 12.682C12.0781 13.0044 11.6651 13.1656 11.1412 13.1656C10.8726 13.1656 10.614 13.1152 10.3655 13.0144C10.117 12.907 9.92226 12.7189 9.78123 12.4503C9.72078 12.6048 9.64691 12.729 9.5596 12.823C9.47229 12.9171 9.38162 12.9909 9.2876 13.0447C9.19358 13.0917 9.09284 13.1253 8.98538 13.1454C8.88464 13.1588 8.78726 13.1656 8.69324 13.1656H8.53205C8.44475 13.1656 8.38766 13.1387 8.3608 13.085C8.32722 13.0312 8.31043 12.9473 8.31043 12.8331C8.31043 12.7122 8.32722 12.6216 8.3608 12.5611C8.38766 12.5007 8.44475 12.4705 8.53205 12.4705H8.69324ZM12.1889 11.3925C12.1889 11.0433 12.1117 10.7612 11.9572 10.5463C11.8027 10.3247 11.5375 10.2139 11.1614 10.2139C10.4629 10.2139 10.1137 10.6202 10.1137 11.4328C10.1137 11.7754 10.2077 12.0339 10.3957 12.2085C10.5905 12.3831 10.839 12.4705 11.1412 12.4705C11.4837 12.4705 11.7423 12.3764 11.9169 12.1884C12.0982 12.0003 12.1889 11.7351 12.1889 11.3925Z" fill="currentColor"></path>
+                                </svg></s>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <span class="text-white text-10 d-flex">تاپایان<span class="text-secondary ms-2 d-flex align-items-center">46 روز و 22 ساعت</span></span>
+                                </div>
+                                <span class="text-white fs-3 fw-bold d-flex align-items-center">790,000<svg class="mr-1 " width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path class="text-gray-880 dark:text-white" d="M1.14878 6.91843C1.44428 6.91843 1.70285 6.87142 1.92447 6.77739C2.15282 6.68337 2.34422 6.55577 2.49869 6.39458C2.65316 6.2334 2.77069 6.04535 2.85128 5.83044C2.93187 5.62224 2.97888 5.40062 2.99231 5.16556H1.98492C1.6424 5.16556 1.36033 5.12862 1.1387 5.05474C0.917077 4.98087 0.742461 4.87341 0.614858 4.73238C0.487254 4.59134 0.396588 4.42344 0.34286 4.22868C0.295849 4.0272 0.272343 3.80221 0.272343 3.55372C0.272343 3.29852 0.309281 3.05674 0.383156 2.8284C0.457032 2.60005 0.564488 2.39857 0.705523 2.22396C0.846559 2.04934 1.02117 1.91167 1.22937 1.81093C1.44428 1.70347 1.68941 1.64974 1.96477 1.64974C2.1864 1.64974 2.39795 1.68668 2.59943 1.76056C2.80091 1.83443 2.97888 1.95196 3.13335 2.11315C3.28782 2.26761 3.40871 2.47245 3.49601 2.72766C3.59004 2.97615 3.63705 3.27837 3.63705 3.63431V4.47045H4.60415C4.68474 4.47045 4.73847 4.50068 4.76533 4.56112C4.79891 4.61485 4.8157 4.6988 4.8157 4.81297C4.8157 4.93386 4.79891 5.02452 4.76533 5.08497C4.73847 5.13869 4.68474 5.16556 4.60415 5.16556H3.6169C3.60347 5.49464 3.53631 5.80693 3.41542 6.10244C3.30125 6.39794 3.14007 6.65651 2.93187 6.87813C2.72368 7.09976 2.47518 7.27438 2.1864 7.40198C1.89761 7.5363 1.57188 7.60346 1.20922 7.60346H0.141381L0.0809373 6.91843H1.14878ZM0.896929 3.51343C0.896929 3.68133 0.913719 3.82572 0.947299 3.94661C0.987594 4.0675 1.0514 4.16823 1.1387 4.24883C1.23273 4.3227 1.35697 4.37979 1.51144 4.42008C1.66591 4.45366 1.86067 4.47045 2.09573 4.47045H3.00239V3.71491C3.00239 3.21792 2.90501 2.86198 2.71024 2.64707C2.51548 2.43215 2.24684 2.3247 1.90433 2.3247C1.58196 2.3247 1.33347 2.43215 1.15885 2.64707C0.984237 2.86198 0.896929 3.15076 0.896929 3.51343ZM6.26895 4.47045C6.35626 4.47045 6.41335 4.50068 6.44021 4.56112C6.47379 4.61485 6.49058 4.6988 6.49058 4.81297C6.49058 4.93386 6.47379 5.02452 6.44021 5.08497C6.41335 5.13869 6.35626 5.16556 6.26895 5.16556H4.60675C4.51944 5.16556 4.46235 5.13869 4.43549 5.08497C4.40191 5.03124 4.38512 4.94729 4.38512 4.83312C4.38512 4.71223 4.40191 4.62156 4.43549 4.56112C4.46235 4.50068 4.51944 4.47045 4.60675 4.47045H6.26895ZM7.93155 4.47045C8.01886 4.47045 8.07594 4.50068 8.10281 4.56112C8.13639 4.61485 8.15318 4.6988 8.15318 4.81297C8.15318 4.93386 8.13639 5.02452 8.10281 5.08497C8.07594 5.13869 8.01886 5.16556 7.93155 5.16556H6.26935C6.18204 5.16556 6.12495 5.13869 6.09809 5.08497C6.06451 5.03124 6.04772 4.94729 6.04772 4.83312C6.04772 4.71223 6.06451 4.62156 6.09809 4.56112C6.12495 4.50068 6.18204 4.47045 6.26935 4.47045H7.93155ZM9.59415 4.47045C9.68146 4.47045 9.73854 4.50068 9.76541 4.56112C9.79899 4.61485 9.81578 4.6988 9.81578 4.81297C9.81578 4.93386 9.79899 5.02452 9.76541 5.08497C9.73854 5.13869 9.68146 5.16556 9.59415 5.16556H7.93194C7.84464 5.16556 7.78755 5.13869 7.76069 5.08497C7.72711 5.03124 7.71032 4.94729 7.71032 4.83312C7.71032 4.71223 7.72711 4.62156 7.76069 4.56112C7.78755 4.50068 7.84464 4.47045 7.93194 4.47045H9.59415ZM11.2567 4.47045C11.3441 4.47045 11.4011 4.50068 11.428 4.56112C11.4616 4.61485 11.4784 4.6988 11.4784 4.81297C11.4784 4.93386 11.4616 5.02452 11.428 5.08497C11.4011 5.13869 11.3441 5.16556 11.2567 5.16556H9.59454C9.50723 5.16556 9.45015 5.13869 9.42328 5.08497C9.3897 5.03124 9.37291 4.94729 9.37291 4.83312C9.37291 4.71223 9.3897 4.62156 9.42328 4.56112C9.45015 4.50068 9.50723 4.47045 9.59454 4.47045H11.2567ZM12.1638 4.47045C12.4257 4.47045 12.6339 4.39994 12.7884 4.2589C12.9496 4.11787 13.0302 3.9231 13.0302 3.67461V2.2844H13.685V3.67461C13.685 4.15144 13.5506 4.52082 13.282 4.78275C13.0201 5.03795 12.6608 5.16556 12.2041 5.16556H11.2571C11.1698 5.16556 11.1127 5.13869 11.0859 5.08497C11.0523 5.03124 11.0355 4.94729 11.0355 4.83312C11.0355 4.71223 11.0523 4.62156 11.0859 4.56112C11.1127 4.50068 11.1698 4.47045 11.2571 4.47045H12.1638ZM13.7857 0.994934H12.9798V0.279683H13.7857V0.994934ZM12.5063 0.994934H11.7004V0.279683H12.5063V0.994934ZM5.64177 12.9641C5.64177 13.3267 5.58468 13.6659 5.47051 13.9815C5.35634 14.3039 5.1918 14.5826 4.97689 14.8177C4.76198 15.0595 4.50005 15.2509 4.19112 15.3919C3.8889 15.5329 3.54638 15.6035 3.16357 15.6035H2.56921C1.81702 15.6035 1.23273 15.3718 0.816337 14.9084C0.399946 14.445 0.191751 13.8103 0.191751 13.0044V11.2414H0.836485V12.9842C0.836485 13.273 0.870065 13.5349 0.937225 13.77C1.0111 14.0051 1.12191 14.2065 1.26967 14.3744C1.42413 14.549 1.61554 14.6834 1.84388 14.7774C2.07223 14.8714 2.34758 14.9184 2.66995 14.9184H3.1132C3.42885 14.9184 3.70421 14.8647 3.93927 14.7572C4.17433 14.6565 4.36909 14.5188 4.52356 14.3442C4.68474 14.1696 4.80227 13.9648 4.87615 13.7297C4.95674 13.4946 4.99703 13.2495 4.99703 12.9943V10.2844H5.64177V12.9641ZM3.21394 10.0628H2.36773V9.32738H3.21394V10.0628ZM8.24526 13.1656C8.07064 13.1656 7.90274 13.1421 7.74156 13.095C7.58038 13.0413 7.43598 12.954 7.30838 12.8331C7.18749 12.7122 7.09011 12.5544 7.01624 12.3596C6.94236 12.1582 6.90542 11.9097 6.90542 11.6142V6.9197H7.56023V11.4933C7.56023 11.7754 7.62067 12.0104 7.74156 12.1985C7.86916 12.3798 8.074 12.4705 8.35607 12.4705H8.52733C8.67508 12.4705 8.74896 12.5846 8.74896 12.813C8.74896 13.048 8.67508 13.1656 8.52733 13.1656H8.24526ZM8.69324 12.4705C8.95516 12.4705 9.15328 12.4067 9.2876 12.279C9.42192 12.1514 9.48908 11.9802 9.48908 11.7653V11.3825C9.48908 10.7982 9.63683 10.3415 9.93233 10.0124C10.2346 9.68332 10.6509 9.51878 11.1815 9.51878C11.4569 9.51878 11.6986 9.56243 11.9068 9.64974C12.115 9.73705 12.2863 9.8613 12.4206 10.0225C12.5616 10.1837 12.6657 10.3751 12.7329 10.5967C12.8001 10.8183 12.8336 11.0635 12.8336 11.3321C12.8336 11.9097 12.6825 12.3596 12.3803 12.682C12.0781 13.0044 11.6651 13.1656 11.1412 13.1656C10.8726 13.1656 10.614 13.1152 10.3655 13.0144C10.117 12.907 9.92226 12.7189 9.78123 12.4503C9.72078 12.6048 9.64691 12.729 9.5596 12.823C9.47229 12.9171 9.38162 12.9909 9.2876 13.0447C9.19358 13.0917 9.09284 13.1253 8.98538 13.1454C8.88464 13.1588 8.78726 13.1656 8.69324 13.1656H8.53205C8.44475 13.1656 8.38766 13.1387 8.3608 13.085C8.32722 13.0312 8.31043 12.9473 8.31043 12.8331C8.31043 12.7122 8.32722 12.6216 8.3608 12.5611C8.38766 12.5007 8.44475 12.4705 8.53205 12.4705H8.69324ZM12.1889 11.3925C12.1889 11.0433 12.1117 10.7612 11.9572 10.5463C11.8027 10.3247 11.5375 10.2139 11.1614 10.2139C10.4629 10.2139 10.1137 10.6202 10.1137 11.4328C10.1137 11.7754 10.2077 12.0339 10.3957 12.2085C10.5905 12.3831 10.839 12.4705 11.1412 12.4705C11.4837 12.4705 11.7423 12.3764 11.9169 12.1884C12.0982 12.0003 12.1889 11.7351 12.1889 11.3925Z" fill="currentColor"></path>
+                                </svg></span>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="card-footer border-white">
+                        <a href="#" class="nav-link text-primary d-flex justify-content-center fw-bold">مشاهده اطلاعات دوره<i class="bi bi-caret-left-fill"></i></a>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mt-md-5  mb-5 mb-md-0 col-xl-3">
+                    <div class="card h-100 px-3 card-bg position-relative mt-md-3">
+                        <img src="https://static.roocket.ir/images/cover/2024/3/16/c8hi7JBefdfRufQj0uYhfgZMjAM0eznraYDb3TVc.jpg" alt="" class="rounded card-img-top position-absolute-img">
+                        <div class="d-flex align-items-center">
+                            <span class="text-primary px-0"><i class="bi bi-dot"></i>به زودی</span>
+                            <span class="text-danger px-1"><i class="bi bi-dot"></i>پیش فرض</span>
+                        </div>
+                        <div class="card-body px-0 d-flex flex-column justify-content-between">
+                        <h6 class="fs-5 text-white fw-bold">آموزش پروژه محور Tailwind CSS</h6>
+                        <p class="card-text text-white lh-lg fw-normal text-sm">آموزش پروژه محور Tailwind CSS به شما آموزش میدهد که چطور از tailwind به شکل حرفه‌ای و کامل در پروژه‌های پیش رو خود استفاده کنید</p>
+                        <span class="text-white fw-semibold text-13"><i class="bi bi-star-fill text-warning px-1"></i>دسترسی رایگان برای اعضای ویژه</span>
+                        <div class="d-flex flex-column justify-content-between">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="text-danger rounded bg-white py-1 text-10 d-flex align-items-center fw-bold">پیش فروش برای خرید نقدی</span>
+                                <s class="text-white-50 fs-4 lead d-flex align-items-center justify-content-between">890,000<svg class="mr-1 " width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path class="text-gray-880 dark:text-white" d="M1.14878 6.91843C1.44428 6.91843 1.70285 6.87142 1.92447 6.77739C2.15282 6.68337 2.34422 6.55577 2.49869 6.39458C2.65316 6.2334 2.77069 6.04535 2.85128 5.83044C2.93187 5.62224 2.97888 5.40062 2.99231 5.16556H1.98492C1.6424 5.16556 1.36033 5.12862 1.1387 5.05474C0.917077 4.98087 0.742461 4.87341 0.614858 4.73238C0.487254 4.59134 0.396588 4.42344 0.34286 4.22868C0.295849 4.0272 0.272343 3.80221 0.272343 3.55372C0.272343 3.29852 0.309281 3.05674 0.383156 2.8284C0.457032 2.60005 0.564488 2.39857 0.705523 2.22396C0.846559 2.04934 1.02117 1.91167 1.22937 1.81093C1.44428 1.70347 1.68941 1.64974 1.96477 1.64974C2.1864 1.64974 2.39795 1.68668 2.59943 1.76056C2.80091 1.83443 2.97888 1.95196 3.13335 2.11315C3.28782 2.26761 3.40871 2.47245 3.49601 2.72766C3.59004 2.97615 3.63705 3.27837 3.63705 3.63431V4.47045H4.60415C4.68474 4.47045 4.73847 4.50068 4.76533 4.56112C4.79891 4.61485 4.8157 4.6988 4.8157 4.81297C4.8157 4.93386 4.79891 5.02452 4.76533 5.08497C4.73847 5.13869 4.68474 5.16556 4.60415 5.16556H3.6169C3.60347 5.49464 3.53631 5.80693 3.41542 6.10244C3.30125 6.39794 3.14007 6.65651 2.93187 6.87813C2.72368 7.09976 2.47518 7.27438 2.1864 7.40198C1.89761 7.5363 1.57188 7.60346 1.20922 7.60346H0.141381L0.0809373 6.91843H1.14878ZM0.896929 3.51343C0.896929 3.68133 0.913719 3.82572 0.947299 3.94661C0.987594 4.0675 1.0514 4.16823 1.1387 4.24883C1.23273 4.3227 1.35697 4.37979 1.51144 4.42008C1.66591 4.45366 1.86067 4.47045 2.09573 4.47045H3.00239V3.71491C3.00239 3.21792 2.90501 2.86198 2.71024 2.64707C2.51548 2.43215 2.24684 2.3247 1.90433 2.3247C1.58196 2.3247 1.33347 2.43215 1.15885 2.64707C0.984237 2.86198 0.896929 3.15076 0.896929 3.51343ZM6.26895 4.47045C6.35626 4.47045 6.41335 4.50068 6.44021 4.56112C6.47379 4.61485 6.49058 4.6988 6.49058 4.81297C6.49058 4.93386 6.47379 5.02452 6.44021 5.08497C6.41335 5.13869 6.35626 5.16556 6.26895 5.16556H4.60675C4.51944 5.16556 4.46235 5.13869 4.43549 5.08497C4.40191 5.03124 4.38512 4.94729 4.38512 4.83312C4.38512 4.71223 4.40191 4.62156 4.43549 4.56112C4.46235 4.50068 4.51944 4.47045 4.60675 4.47045H6.26895ZM7.93155 4.47045C8.01886 4.47045 8.07594 4.50068 8.10281 4.56112C8.13639 4.61485 8.15318 4.6988 8.15318 4.81297C8.15318 4.93386 8.13639 5.02452 8.10281 5.08497C8.07594 5.13869 8.01886 5.16556 7.93155 5.16556H6.26935C6.18204 5.16556 6.12495 5.13869 6.09809 5.08497C6.06451 5.03124 6.04772 4.94729 6.04772 4.83312C6.04772 4.71223 6.06451 4.62156 6.09809 4.56112C6.12495 4.50068 6.18204 4.47045 6.26935 4.47045H7.93155ZM9.59415 4.47045C9.68146 4.47045 9.73854 4.50068 9.76541 4.56112C9.79899 4.61485 9.81578 4.6988 9.81578 4.81297C9.81578 4.93386 9.79899 5.02452 9.76541 5.08497C9.73854 5.13869 9.68146 5.16556 9.59415 5.16556H7.93194C7.84464 5.16556 7.78755 5.13869 7.76069 5.08497C7.72711 5.03124 7.71032 4.94729 7.71032 4.83312C7.71032 4.71223 7.72711 4.62156 7.76069 4.56112C7.78755 4.50068 7.84464 4.47045 7.93194 4.47045H9.59415ZM11.2567 4.47045C11.3441 4.47045 11.4011 4.50068 11.428 4.56112C11.4616 4.61485 11.4784 4.6988 11.4784 4.81297C11.4784 4.93386 11.4616 5.02452 11.428 5.08497C11.4011 5.13869 11.3441 5.16556 11.2567 5.16556H9.59454C9.50723 5.16556 9.45015 5.13869 9.42328 5.08497C9.3897 5.03124 9.37291 4.94729 9.37291 4.83312C9.37291 4.71223 9.3897 4.62156 9.42328 4.56112C9.45015 4.50068 9.50723 4.47045 9.59454 4.47045H11.2567ZM12.1638 4.47045C12.4257 4.47045 12.6339 4.39994 12.7884 4.2589C12.9496 4.11787 13.0302 3.9231 13.0302 3.67461V2.2844H13.685V3.67461C13.685 4.15144 13.5506 4.52082 13.282 4.78275C13.0201 5.03795 12.6608 5.16556 12.2041 5.16556H11.2571C11.1698 5.16556 11.1127 5.13869 11.0859 5.08497C11.0523 5.03124 11.0355 4.94729 11.0355 4.83312C11.0355 4.71223 11.0523 4.62156 11.0859 4.56112C11.1127 4.50068 11.1698 4.47045 11.2571 4.47045H12.1638ZM13.7857 0.994934H12.9798V0.279683H13.7857V0.994934ZM12.5063 0.994934H11.7004V0.279683H12.5063V0.994934ZM5.64177 12.9641C5.64177 13.3267 5.58468 13.6659 5.47051 13.9815C5.35634 14.3039 5.1918 14.5826 4.97689 14.8177C4.76198 15.0595 4.50005 15.2509 4.19112 15.3919C3.8889 15.5329 3.54638 15.6035 3.16357 15.6035H2.56921C1.81702 15.6035 1.23273 15.3718 0.816337 14.9084C0.399946 14.445 0.191751 13.8103 0.191751 13.0044V11.2414H0.836485V12.9842C0.836485 13.273 0.870065 13.5349 0.937225 13.77C1.0111 14.0051 1.12191 14.2065 1.26967 14.3744C1.42413 14.549 1.61554 14.6834 1.84388 14.7774C2.07223 14.8714 2.34758 14.9184 2.66995 14.9184H3.1132C3.42885 14.9184 3.70421 14.8647 3.93927 14.7572C4.17433 14.6565 4.36909 14.5188 4.52356 14.3442C4.68474 14.1696 4.80227 13.9648 4.87615 13.7297C4.95674 13.4946 4.99703 13.2495 4.99703 12.9943V10.2844H5.64177V12.9641ZM3.21394 10.0628H2.36773V9.32738H3.21394V10.0628ZM8.24526 13.1656C8.07064 13.1656 7.90274 13.1421 7.74156 13.095C7.58038 13.0413 7.43598 12.954 7.30838 12.8331C7.18749 12.7122 7.09011 12.5544 7.01624 12.3596C6.94236 12.1582 6.90542 11.9097 6.90542 11.6142V6.9197H7.56023V11.4933C7.56023 11.7754 7.62067 12.0104 7.74156 12.1985C7.86916 12.3798 8.074 12.4705 8.35607 12.4705H8.52733C8.67508 12.4705 8.74896 12.5846 8.74896 12.813C8.74896 13.048 8.67508 13.1656 8.52733 13.1656H8.24526ZM8.69324 12.4705C8.95516 12.4705 9.15328 12.4067 9.2876 12.279C9.42192 12.1514 9.48908 11.9802 9.48908 11.7653V11.3825C9.48908 10.7982 9.63683 10.3415 9.93233 10.0124C10.2346 9.68332 10.6509 9.51878 11.1815 9.51878C11.4569 9.51878 11.6986 9.56243 11.9068 9.64974C12.115 9.73705 12.2863 9.8613 12.4206 10.0225C12.5616 10.1837 12.6657 10.3751 12.7329 10.5967C12.8001 10.8183 12.8336 11.0635 12.8336 11.3321C12.8336 11.9097 12.6825 12.3596 12.3803 12.682C12.0781 13.0044 11.6651 13.1656 11.1412 13.1656C10.8726 13.1656 10.614 13.1152 10.3655 13.0144C10.117 12.907 9.92226 12.7189 9.78123 12.4503C9.72078 12.6048 9.64691 12.729 9.5596 12.823C9.47229 12.9171 9.38162 12.9909 9.2876 13.0447C9.19358 13.0917 9.09284 13.1253 8.98538 13.1454C8.88464 13.1588 8.78726 13.1656 8.69324 13.1656H8.53205C8.44475 13.1656 8.38766 13.1387 8.3608 13.085C8.32722 13.0312 8.31043 12.9473 8.31043 12.8331C8.31043 12.7122 8.32722 12.6216 8.3608 12.5611C8.38766 12.5007 8.44475 12.4705 8.53205 12.4705H8.69324ZM12.1889 11.3925C12.1889 11.0433 12.1117 10.7612 11.9572 10.5463C11.8027 10.3247 11.5375 10.2139 11.1614 10.2139C10.4629 10.2139 10.1137 10.6202 10.1137 11.4328C10.1137 11.7754 10.2077 12.0339 10.3957 12.2085C10.5905 12.3831 10.839 12.4705 11.1412 12.4705C11.4837 12.4705 11.7423 12.3764 11.9169 12.1884C12.0982 12.0003 12.1889 11.7351 12.1889 11.3925Z" fill="currentColor"></path>
+                                </svg></s>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <span class="text-white text-10 d-flex align-items-center">تاپایان<span class="text-secondary ms-2 d-flex align-items-center">47 روز و 00 ساعت</span></span>
+                                </div>
+                                <span class="text-white fs-3 fw-bold d-flex align-items-center">790,000<svg class="mr-1 " width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path class="text-gray-880 dark:text-white" d="M1.14878 6.91843C1.44428 6.91843 1.70285 6.87142 1.92447 6.77739C2.15282 6.68337 2.34422 6.55577 2.49869 6.39458C2.65316 6.2334 2.77069 6.04535 2.85128 5.83044C2.93187 5.62224 2.97888 5.40062 2.99231 5.16556H1.98492C1.6424 5.16556 1.36033 5.12862 1.1387 5.05474C0.917077 4.98087 0.742461 4.87341 0.614858 4.73238C0.487254 4.59134 0.396588 4.42344 0.34286 4.22868C0.295849 4.0272 0.272343 3.80221 0.272343 3.55372C0.272343 3.29852 0.309281 3.05674 0.383156 2.8284C0.457032 2.60005 0.564488 2.39857 0.705523 2.22396C0.846559 2.04934 1.02117 1.91167 1.22937 1.81093C1.44428 1.70347 1.68941 1.64974 1.96477 1.64974C2.1864 1.64974 2.39795 1.68668 2.59943 1.76056C2.80091 1.83443 2.97888 1.95196 3.13335 2.11315C3.28782 2.26761 3.40871 2.47245 3.49601 2.72766C3.59004 2.97615 3.63705 3.27837 3.63705 3.63431V4.47045H4.60415C4.68474 4.47045 4.73847 4.50068 4.76533 4.56112C4.79891 4.61485 4.8157 4.6988 4.8157 4.81297C4.8157 4.93386 4.79891 5.02452 4.76533 5.08497C4.73847 5.13869 4.68474 5.16556 4.60415 5.16556H3.6169C3.60347 5.49464 3.53631 5.80693 3.41542 6.10244C3.30125 6.39794 3.14007 6.65651 2.93187 6.87813C2.72368 7.09976 2.47518 7.27438 2.1864 7.40198C1.89761 7.5363 1.57188 7.60346 1.20922 7.60346H0.141381L0.0809373 6.91843H1.14878ZM0.896929 3.51343C0.896929 3.68133 0.913719 3.82572 0.947299 3.94661C0.987594 4.0675 1.0514 4.16823 1.1387 4.24883C1.23273 4.3227 1.35697 4.37979 1.51144 4.42008C1.66591 4.45366 1.86067 4.47045 2.09573 4.47045H3.00239V3.71491C3.00239 3.21792 2.90501 2.86198 2.71024 2.64707C2.51548 2.43215 2.24684 2.3247 1.90433 2.3247C1.58196 2.3247 1.33347 2.43215 1.15885 2.64707C0.984237 2.86198 0.896929 3.15076 0.896929 3.51343ZM6.26895 4.47045C6.35626 4.47045 6.41335 4.50068 6.44021 4.56112C6.47379 4.61485 6.49058 4.6988 6.49058 4.81297C6.49058 4.93386 6.47379 5.02452 6.44021 5.08497C6.41335 5.13869 6.35626 5.16556 6.26895 5.16556H4.60675C4.51944 5.16556 4.46235 5.13869 4.43549 5.08497C4.40191 5.03124 4.38512 4.94729 4.38512 4.83312C4.38512 4.71223 4.40191 4.62156 4.43549 4.56112C4.46235 4.50068 4.51944 4.47045 4.60675 4.47045H6.26895ZM7.93155 4.47045C8.01886 4.47045 8.07594 4.50068 8.10281 4.56112C8.13639 4.61485 8.15318 4.6988 8.15318 4.81297C8.15318 4.93386 8.13639 5.02452 8.10281 5.08497C8.07594 5.13869 8.01886 5.16556 7.93155 5.16556H6.26935C6.18204 5.16556 6.12495 5.13869 6.09809 5.08497C6.06451 5.03124 6.04772 4.94729 6.04772 4.83312C6.04772 4.71223 6.06451 4.62156 6.09809 4.56112C6.12495 4.50068 6.18204 4.47045 6.26935 4.47045H7.93155ZM9.59415 4.47045C9.68146 4.47045 9.73854 4.50068 9.76541 4.56112C9.79899 4.61485 9.81578 4.6988 9.81578 4.81297C9.81578 4.93386 9.79899 5.02452 9.76541 5.08497C9.73854 5.13869 9.68146 5.16556 9.59415 5.16556H7.93194C7.84464 5.16556 7.78755 5.13869 7.76069 5.08497C7.72711 5.03124 7.71032 4.94729 7.71032 4.83312C7.71032 4.71223 7.72711 4.62156 7.76069 4.56112C7.78755 4.50068 7.84464 4.47045 7.93194 4.47045H9.59415ZM11.2567 4.47045C11.3441 4.47045 11.4011 4.50068 11.428 4.56112C11.4616 4.61485 11.4784 4.6988 11.4784 4.81297C11.4784 4.93386 11.4616 5.02452 11.428 5.08497C11.4011 5.13869 11.3441 5.16556 11.2567 5.16556H9.59454C9.50723 5.16556 9.45015 5.13869 9.42328 5.08497C9.3897 5.03124 9.37291 4.94729 9.37291 4.83312C9.37291 4.71223 9.3897 4.62156 9.42328 4.56112C9.45015 4.50068 9.50723 4.47045 9.59454 4.47045H11.2567ZM12.1638 4.47045C12.4257 4.47045 12.6339 4.39994 12.7884 4.2589C12.9496 4.11787 13.0302 3.9231 13.0302 3.67461V2.2844H13.685V3.67461C13.685 4.15144 13.5506 4.52082 13.282 4.78275C13.0201 5.03795 12.6608 5.16556 12.2041 5.16556H11.2571C11.1698 5.16556 11.1127 5.13869 11.0859 5.08497C11.0523 5.03124 11.0355 4.94729 11.0355 4.83312C11.0355 4.71223 11.0523 4.62156 11.0859 4.56112C11.1127 4.50068 11.1698 4.47045 11.2571 4.47045H12.1638ZM13.7857 0.994934H12.9798V0.279683H13.7857V0.994934ZM12.5063 0.994934H11.7004V0.279683H12.5063V0.994934ZM5.64177 12.9641C5.64177 13.3267 5.58468 13.6659 5.47051 13.9815C5.35634 14.3039 5.1918 14.5826 4.97689 14.8177C4.76198 15.0595 4.50005 15.2509 4.19112 15.3919C3.8889 15.5329 3.54638 15.6035 3.16357 15.6035H2.56921C1.81702 15.6035 1.23273 15.3718 0.816337 14.9084C0.399946 14.445 0.191751 13.8103 0.191751 13.0044V11.2414H0.836485V12.9842C0.836485 13.273 0.870065 13.5349 0.937225 13.77C1.0111 14.0051 1.12191 14.2065 1.26967 14.3744C1.42413 14.549 1.61554 14.6834 1.84388 14.7774C2.07223 14.8714 2.34758 14.9184 2.66995 14.9184H3.1132C3.42885 14.9184 3.70421 14.8647 3.93927 14.7572C4.17433 14.6565 4.36909 14.5188 4.52356 14.3442C4.68474 14.1696 4.80227 13.9648 4.87615 13.7297C4.95674 13.4946 4.99703 13.2495 4.99703 12.9943V10.2844H5.64177V12.9641ZM3.21394 10.0628H2.36773V9.32738H3.21394V10.0628ZM8.24526 13.1656C8.07064 13.1656 7.90274 13.1421 7.74156 13.095C7.58038 13.0413 7.43598 12.954 7.30838 12.8331C7.18749 12.7122 7.09011 12.5544 7.01624 12.3596C6.94236 12.1582 6.90542 11.9097 6.90542 11.6142V6.9197H7.56023V11.4933C7.56023 11.7754 7.62067 12.0104 7.74156 12.1985C7.86916 12.3798 8.074 12.4705 8.35607 12.4705H8.52733C8.67508 12.4705 8.74896 12.5846 8.74896 12.813C8.74896 13.048 8.67508 13.1656 8.52733 13.1656H8.24526ZM8.69324 12.4705C8.95516 12.4705 9.15328 12.4067 9.2876 12.279C9.42192 12.1514 9.48908 11.9802 9.48908 11.7653V11.3825C9.48908 10.7982 9.63683 10.3415 9.93233 10.0124C10.2346 9.68332 10.6509 9.51878 11.1815 9.51878C11.4569 9.51878 11.6986 9.56243 11.9068 9.64974C12.115 9.73705 12.2863 9.8613 12.4206 10.0225C12.5616 10.1837 12.6657 10.3751 12.7329 10.5967C12.8001 10.8183 12.8336 11.0635 12.8336 11.3321C12.8336 11.9097 12.6825 12.3596 12.3803 12.682C12.0781 13.0044 11.6651 13.1656 11.1412 13.1656C10.8726 13.1656 10.614 13.1152 10.3655 13.0144C10.117 12.907 9.92226 12.7189 9.78123 12.4503C9.72078 12.6048 9.64691 12.729 9.5596 12.823C9.47229 12.9171 9.38162 12.9909 9.2876 13.0447C9.19358 13.0917 9.09284 13.1253 8.98538 13.1454C8.88464 13.1588 8.78726 13.1656 8.69324 13.1656H8.53205C8.44475 13.1656 8.38766 13.1387 8.3608 13.085C8.32722 13.0312 8.31043 12.9473 8.31043 12.8331C8.31043 12.7122 8.32722 12.6216 8.3608 12.5611C8.38766 12.5007 8.44475 12.4705 8.53205 12.4705H8.69324ZM12.1889 11.3925C12.1889 11.0433 12.1117 10.7612 11.9572 10.5463C11.8027 10.3247 11.5375 10.2139 11.1614 10.2139C10.4629 10.2139 10.1137 10.6202 10.1137 11.4328C10.1137 11.7754 10.2077 12.0339 10.3957 12.2085C10.5905 12.3831 10.839 12.4705 11.1412 12.4705C11.4837 12.4705 11.7423 12.3764 11.9169 12.1884C12.0982 12.0003 12.1889 11.7351 12.1889 11.3925Z" fill="currentColor"></path>
+                                </svg></span>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="card-footer border-white">
+                        <a href="#" class="nav-link text-primary d-flex justify-content-center fw-bold">مشاهده اطلاعات دوره<i class="bi bi-caret-left-fill"></i></a>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mt-md-5  mb-5 mb-md-0 col-xl-3">
+                    <div class="card h-100 px-3 card-bg position-relative mt-md-3">
+                        <img src="https://static.roocket.ir/images/cover/2024/3/15/EbATSic1DTWuA71kKNttARiXVVuDGyVRhEZ5Gfp1.jpg" alt="" class="rounded card-img-top position-absolute-img">
+                        <div class="d-flex align-items-center">
+                            <span class="text-primary px-0"><i class="bi bi-dot"></i>به زودی</span>
+                            <span class="text-danger px-1"><i class="bi bi-dot"></i>پیش فرض</span>
+                        </div>
+                        <div class="card-body px-0 d-flex flex-column justify-content-between">
+                        <h6 class="fs-5 text-white fw-bold">آموزش جامع ووکامرس</h6>
+                        <p class="card-text text-white lh-lg fw-normal text-sm">
+                            با یادگیری ووکامرس می‌توانید وبسایت های فروشگاهی مد خود را با وردپرس به شکل کامل پیاده سازی کنید.</p>
+                        <div class="d-flex flex-column justify-content-between">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="text-danger rounded bg-white py-1 text-10 d-flex align-items-center fw-bold">پیش فروش برای خرید نقدی</span>
+                                <s class=" fs-4 text-white-50 d-flex align-items-center">690,000<svg class="mr-1 " width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path class="text-gray-880 dark:text-white" d="M1.14878 6.91843C1.44428 6.91843 1.70285 6.87142 1.92447 6.77739C2.15282 6.68337 2.34422 6.55577 2.49869 6.39458C2.65316 6.2334 2.77069 6.04535 2.85128 5.83044C2.93187 5.62224 2.97888 5.40062 2.99231 5.16556H1.98492C1.6424 5.16556 1.36033 5.12862 1.1387 5.05474C0.917077 4.98087 0.742461 4.87341 0.614858 4.73238C0.487254 4.59134 0.396588 4.42344 0.34286 4.22868C0.295849 4.0272 0.272343 3.80221 0.272343 3.55372C0.272343 3.29852 0.309281 3.05674 0.383156 2.8284C0.457032 2.60005 0.564488 2.39857 0.705523 2.22396C0.846559 2.04934 1.02117 1.91167 1.22937 1.81093C1.44428 1.70347 1.68941 1.64974 1.96477 1.64974C2.1864 1.64974 2.39795 1.68668 2.59943 1.76056C2.80091 1.83443 2.97888 1.95196 3.13335 2.11315C3.28782 2.26761 3.40871 2.47245 3.49601 2.72766C3.59004 2.97615 3.63705 3.27837 3.63705 3.63431V4.47045H4.60415C4.68474 4.47045 4.73847 4.50068 4.76533 4.56112C4.79891 4.61485 4.8157 4.6988 4.8157 4.81297C4.8157 4.93386 4.79891 5.02452 4.76533 5.08497C4.73847 5.13869 4.68474 5.16556 4.60415 5.16556H3.6169C3.60347 5.49464 3.53631 5.80693 3.41542 6.10244C3.30125 6.39794 3.14007 6.65651 2.93187 6.87813C2.72368 7.09976 2.47518 7.27438 2.1864 7.40198C1.89761 7.5363 1.57188 7.60346 1.20922 7.60346H0.141381L0.0809373 6.91843H1.14878ZM0.896929 3.51343C0.896929 3.68133 0.913719 3.82572 0.947299 3.94661C0.987594 4.0675 1.0514 4.16823 1.1387 4.24883C1.23273 4.3227 1.35697 4.37979 1.51144 4.42008C1.66591 4.45366 1.86067 4.47045 2.09573 4.47045H3.00239V3.71491C3.00239 3.21792 2.90501 2.86198 2.71024 2.64707C2.51548 2.43215 2.24684 2.3247 1.90433 2.3247C1.58196 2.3247 1.33347 2.43215 1.15885 2.64707C0.984237 2.86198 0.896929 3.15076 0.896929 3.51343ZM6.26895 4.47045C6.35626 4.47045 6.41335 4.50068 6.44021 4.56112C6.47379 4.61485 6.49058 4.6988 6.49058 4.81297C6.49058 4.93386 6.47379 5.02452 6.44021 5.08497C6.41335 5.13869 6.35626 5.16556 6.26895 5.16556H4.60675C4.51944 5.16556 4.46235 5.13869 4.43549 5.08497C4.40191 5.03124 4.38512 4.94729 4.38512 4.83312C4.38512 4.71223 4.40191 4.62156 4.43549 4.56112C4.46235 4.50068 4.51944 4.47045 4.60675 4.47045H6.26895ZM7.93155 4.47045C8.01886 4.47045 8.07594 4.50068 8.10281 4.56112C8.13639 4.61485 8.15318 4.6988 8.15318 4.81297C8.15318 4.93386 8.13639 5.02452 8.10281 5.08497C8.07594 5.13869 8.01886 5.16556 7.93155 5.16556H6.26935C6.18204 5.16556 6.12495 5.13869 6.09809 5.08497C6.06451 5.03124 6.04772 4.94729 6.04772 4.83312C6.04772 4.71223 6.06451 4.62156 6.09809 4.56112C6.12495 4.50068 6.18204 4.47045 6.26935 4.47045H7.93155ZM9.59415 4.47045C9.68146 4.47045 9.73854 4.50068 9.76541 4.56112C9.79899 4.61485 9.81578 4.6988 9.81578 4.81297C9.81578 4.93386 9.79899 5.02452 9.76541 5.08497C9.73854 5.13869 9.68146 5.16556 9.59415 5.16556H7.93194C7.84464 5.16556 7.78755 5.13869 7.76069 5.08497C7.72711 5.03124 7.71032 4.94729 7.71032 4.83312C7.71032 4.71223 7.72711 4.62156 7.76069 4.56112C7.78755 4.50068 7.84464 4.47045 7.93194 4.47045H9.59415ZM11.2567 4.47045C11.3441 4.47045 11.4011 4.50068 11.428 4.56112C11.4616 4.61485 11.4784 4.6988 11.4784 4.81297C11.4784 4.93386 11.4616 5.02452 11.428 5.08497C11.4011 5.13869 11.3441 5.16556 11.2567 5.16556H9.59454C9.50723 5.16556 9.45015 5.13869 9.42328 5.08497C9.3897 5.03124 9.37291 4.94729 9.37291 4.83312C9.37291 4.71223 9.3897 4.62156 9.42328 4.56112C9.45015 4.50068 9.50723 4.47045 9.59454 4.47045H11.2567ZM12.1638 4.47045C12.4257 4.47045 12.6339 4.39994 12.7884 4.2589C12.9496 4.11787 13.0302 3.9231 13.0302 3.67461V2.2844H13.685V3.67461C13.685 4.15144 13.5506 4.52082 13.282 4.78275C13.0201 5.03795 12.6608 5.16556 12.2041 5.16556H11.2571C11.1698 5.16556 11.1127 5.13869 11.0859 5.08497C11.0523 5.03124 11.0355 4.94729 11.0355 4.83312C11.0355 4.71223 11.0523 4.62156 11.0859 4.56112C11.1127 4.50068 11.1698 4.47045 11.2571 4.47045H12.1638ZM13.7857 0.994934H12.9798V0.279683H13.7857V0.994934ZM12.5063 0.994934H11.7004V0.279683H12.5063V0.994934ZM5.64177 12.9641C5.64177 13.3267 5.58468 13.6659 5.47051 13.9815C5.35634 14.3039 5.1918 14.5826 4.97689 14.8177C4.76198 15.0595 4.50005 15.2509 4.19112 15.3919C3.8889 15.5329 3.54638 15.6035 3.16357 15.6035H2.56921C1.81702 15.6035 1.23273 15.3718 0.816337 14.9084C0.399946 14.445 0.191751 13.8103 0.191751 13.0044V11.2414H0.836485V12.9842C0.836485 13.273 0.870065 13.5349 0.937225 13.77C1.0111 14.0051 1.12191 14.2065 1.26967 14.3744C1.42413 14.549 1.61554 14.6834 1.84388 14.7774C2.07223 14.8714 2.34758 14.9184 2.66995 14.9184H3.1132C3.42885 14.9184 3.70421 14.8647 3.93927 14.7572C4.17433 14.6565 4.36909 14.5188 4.52356 14.3442C4.68474 14.1696 4.80227 13.9648 4.87615 13.7297C4.95674 13.4946 4.99703 13.2495 4.99703 12.9943V10.2844H5.64177V12.9641ZM3.21394 10.0628H2.36773V9.32738H3.21394V10.0628ZM8.24526 13.1656C8.07064 13.1656 7.90274 13.1421 7.74156 13.095C7.58038 13.0413 7.43598 12.954 7.30838 12.8331C7.18749 12.7122 7.09011 12.5544 7.01624 12.3596C6.94236 12.1582 6.90542 11.9097 6.90542 11.6142V6.9197H7.56023V11.4933C7.56023 11.7754 7.62067 12.0104 7.74156 12.1985C7.86916 12.3798 8.074 12.4705 8.35607 12.4705H8.52733C8.67508 12.4705 8.74896 12.5846 8.74896 12.813C8.74896 13.048 8.67508 13.1656 8.52733 13.1656H8.24526ZM8.69324 12.4705C8.95516 12.4705 9.15328 12.4067 9.2876 12.279C9.42192 12.1514 9.48908 11.9802 9.48908 11.7653V11.3825C9.48908 10.7982 9.63683 10.3415 9.93233 10.0124C10.2346 9.68332 10.6509 9.51878 11.1815 9.51878C11.4569 9.51878 11.6986 9.56243 11.9068 9.64974C12.115 9.73705 12.2863 9.8613 12.4206 10.0225C12.5616 10.1837 12.6657 10.3751 12.7329 10.5967C12.8001 10.8183 12.8336 11.0635 12.8336 11.3321C12.8336 11.9097 12.6825 12.3596 12.3803 12.682C12.0781 13.0044 11.6651 13.1656 11.1412 13.1656C10.8726 13.1656 10.614 13.1152 10.3655 13.0144C10.117 12.907 9.92226 12.7189 9.78123 12.4503C9.72078 12.6048 9.64691 12.729 9.5596 12.823C9.47229 12.9171 9.38162 12.9909 9.2876 13.0447C9.19358 13.0917 9.09284 13.1253 8.98538 13.1454C8.88464 13.1588 8.78726 13.1656 8.69324 13.1656H8.53205C8.44475 13.1656 8.38766 13.1387 8.3608 13.085C8.32722 13.0312 8.31043 12.9473 8.31043 12.8331C8.31043 12.7122 8.32722 12.6216 8.3608 12.5611C8.38766 12.5007 8.44475 12.4705 8.53205 12.4705H8.69324ZM12.1889 11.3925C12.1889 11.0433 12.1117 10.7612 11.9572 10.5463C11.8027 10.3247 11.5375 10.2139 11.1614 10.2139C10.4629 10.2139 10.1137 10.6202 10.1137 11.4328C10.1137 11.7754 10.2077 12.0339 10.3957 12.2085C10.5905 12.3831 10.839 12.4705 11.1412 12.4705C11.4837 12.4705 11.7423 12.3764 11.9169 12.1884C12.0982 12.0003 12.1889 11.7351 12.1889 11.3925Z" fill="currentColor"></path>
+                                </svg></s>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <span class="text-white fw-bolder text-10 d-flex align-items-center">تاپایان<span class="text-secondary ms-2">01 روز و 00 ساعت</span></span>
+                                </div>
+                                <span class="text-white fs-3 fw-bold d-flex align-items-center">345,000<svg class="mr-1 " width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path class="text-gray-880 dark:text-white" d="M1.14878 6.91843C1.44428 6.91843 1.70285 6.87142 1.92447 6.77739C2.15282 6.68337 2.34422 6.55577 2.49869 6.39458C2.65316 6.2334 2.77069 6.04535 2.85128 5.83044C2.93187 5.62224 2.97888 5.40062 2.99231 5.16556H1.98492C1.6424 5.16556 1.36033 5.12862 1.1387 5.05474C0.917077 4.98087 0.742461 4.87341 0.614858 4.73238C0.487254 4.59134 0.396588 4.42344 0.34286 4.22868C0.295849 4.0272 0.272343 3.80221 0.272343 3.55372C0.272343 3.29852 0.309281 3.05674 0.383156 2.8284C0.457032 2.60005 0.564488 2.39857 0.705523 2.22396C0.846559 2.04934 1.02117 1.91167 1.22937 1.81093C1.44428 1.70347 1.68941 1.64974 1.96477 1.64974C2.1864 1.64974 2.39795 1.68668 2.59943 1.76056C2.80091 1.83443 2.97888 1.95196 3.13335 2.11315C3.28782 2.26761 3.40871 2.47245 3.49601 2.72766C3.59004 2.97615 3.63705 3.27837 3.63705 3.63431V4.47045H4.60415C4.68474 4.47045 4.73847 4.50068 4.76533 4.56112C4.79891 4.61485 4.8157 4.6988 4.8157 4.81297C4.8157 4.93386 4.79891 5.02452 4.76533 5.08497C4.73847 5.13869 4.68474 5.16556 4.60415 5.16556H3.6169C3.60347 5.49464 3.53631 5.80693 3.41542 6.10244C3.30125 6.39794 3.14007 6.65651 2.93187 6.87813C2.72368 7.09976 2.47518 7.27438 2.1864 7.40198C1.89761 7.5363 1.57188 7.60346 1.20922 7.60346H0.141381L0.0809373 6.91843H1.14878ZM0.896929 3.51343C0.896929 3.68133 0.913719 3.82572 0.947299 3.94661C0.987594 4.0675 1.0514 4.16823 1.1387 4.24883C1.23273 4.3227 1.35697 4.37979 1.51144 4.42008C1.66591 4.45366 1.86067 4.47045 2.09573 4.47045H3.00239V3.71491C3.00239 3.21792 2.90501 2.86198 2.71024 2.64707C2.51548 2.43215 2.24684 2.3247 1.90433 2.3247C1.58196 2.3247 1.33347 2.43215 1.15885 2.64707C0.984237 2.86198 0.896929 3.15076 0.896929 3.51343ZM6.26895 4.47045C6.35626 4.47045 6.41335 4.50068 6.44021 4.56112C6.47379 4.61485 6.49058 4.6988 6.49058 4.81297C6.49058 4.93386 6.47379 5.02452 6.44021 5.08497C6.41335 5.13869 6.35626 5.16556 6.26895 5.16556H4.60675C4.51944 5.16556 4.46235 5.13869 4.43549 5.08497C4.40191 5.03124 4.38512 4.94729 4.38512 4.83312C4.38512 4.71223 4.40191 4.62156 4.43549 4.56112C4.46235 4.50068 4.51944 4.47045 4.60675 4.47045H6.26895ZM7.93155 4.47045C8.01886 4.47045 8.07594 4.50068 8.10281 4.56112C8.13639 4.61485 8.15318 4.6988 8.15318 4.81297C8.15318 4.93386 8.13639 5.02452 8.10281 5.08497C8.07594 5.13869 8.01886 5.16556 7.93155 5.16556H6.26935C6.18204 5.16556 6.12495 5.13869 6.09809 5.08497C6.06451 5.03124 6.04772 4.94729 6.04772 4.83312C6.04772 4.71223 6.06451 4.62156 6.09809 4.56112C6.12495 4.50068 6.18204 4.47045 6.26935 4.47045H7.93155ZM9.59415 4.47045C9.68146 4.47045 9.73854 4.50068 9.76541 4.56112C9.79899 4.61485 9.81578 4.6988 9.81578 4.81297C9.81578 4.93386 9.79899 5.02452 9.76541 5.08497C9.73854 5.13869 9.68146 5.16556 9.59415 5.16556H7.93194C7.84464 5.16556 7.78755 5.13869 7.76069 5.08497C7.72711 5.03124 7.71032 4.94729 7.71032 4.83312C7.71032 4.71223 7.72711 4.62156 7.76069 4.56112C7.78755 4.50068 7.84464 4.47045 7.93194 4.47045H9.59415ZM11.2567 4.47045C11.3441 4.47045 11.4011 4.50068 11.428 4.56112C11.4616 4.61485 11.4784 4.6988 11.4784 4.81297C11.4784 4.93386 11.4616 5.02452 11.428 5.08497C11.4011 5.13869 11.3441 5.16556 11.2567 5.16556H9.59454C9.50723 5.16556 9.45015 5.13869 9.42328 5.08497C9.3897 5.03124 9.37291 4.94729 9.37291 4.83312C9.37291 4.71223 9.3897 4.62156 9.42328 4.56112C9.45015 4.50068 9.50723 4.47045 9.59454 4.47045H11.2567ZM12.1638 4.47045C12.4257 4.47045 12.6339 4.39994 12.7884 4.2589C12.9496 4.11787 13.0302 3.9231 13.0302 3.67461V2.2844H13.685V3.67461C13.685 4.15144 13.5506 4.52082 13.282 4.78275C13.0201 5.03795 12.6608 5.16556 12.2041 5.16556H11.2571C11.1698 5.16556 11.1127 5.13869 11.0859 5.08497C11.0523 5.03124 11.0355 4.94729 11.0355 4.83312C11.0355 4.71223 11.0523 4.62156 11.0859 4.56112C11.1127 4.50068 11.1698 4.47045 11.2571 4.47045H12.1638ZM13.7857 0.994934H12.9798V0.279683H13.7857V0.994934ZM12.5063 0.994934H11.7004V0.279683H12.5063V0.994934ZM5.64177 12.9641C5.64177 13.3267 5.58468 13.6659 5.47051 13.9815C5.35634 14.3039 5.1918 14.5826 4.97689 14.8177C4.76198 15.0595 4.50005 15.2509 4.19112 15.3919C3.8889 15.5329 3.54638 15.6035 3.16357 15.6035H2.56921C1.81702 15.6035 1.23273 15.3718 0.816337 14.9084C0.399946 14.445 0.191751 13.8103 0.191751 13.0044V11.2414H0.836485V12.9842C0.836485 13.273 0.870065 13.5349 0.937225 13.77C1.0111 14.0051 1.12191 14.2065 1.26967 14.3744C1.42413 14.549 1.61554 14.6834 1.84388 14.7774C2.07223 14.8714 2.34758 14.9184 2.66995 14.9184H3.1132C3.42885 14.9184 3.70421 14.8647 3.93927 14.7572C4.17433 14.6565 4.36909 14.5188 4.52356 14.3442C4.68474 14.1696 4.80227 13.9648 4.87615 13.7297C4.95674 13.4946 4.99703 13.2495 4.99703 12.9943V10.2844H5.64177V12.9641ZM3.21394 10.0628H2.36773V9.32738H3.21394V10.0628ZM8.24526 13.1656C8.07064 13.1656 7.90274 13.1421 7.74156 13.095C7.58038 13.0413 7.43598 12.954 7.30838 12.8331C7.18749 12.7122 7.09011 12.5544 7.01624 12.3596C6.94236 12.1582 6.90542 11.9097 6.90542 11.6142V6.9197H7.56023V11.4933C7.56023 11.7754 7.62067 12.0104 7.74156 12.1985C7.86916 12.3798 8.074 12.4705 8.35607 12.4705H8.52733C8.67508 12.4705 8.74896 12.5846 8.74896 12.813C8.74896 13.048 8.67508 13.1656 8.52733 13.1656H8.24526ZM8.69324 12.4705C8.95516 12.4705 9.15328 12.4067 9.2876 12.279C9.42192 12.1514 9.48908 11.9802 9.48908 11.7653V11.3825C9.48908 10.7982 9.63683 10.3415 9.93233 10.0124C10.2346 9.68332 10.6509 9.51878 11.1815 9.51878C11.4569 9.51878 11.6986 9.56243 11.9068 9.64974C12.115 9.73705 12.2863 9.8613 12.4206 10.0225C12.5616 10.1837 12.6657 10.3751 12.7329 10.5967C12.8001 10.8183 12.8336 11.0635 12.8336 11.3321C12.8336 11.9097 12.6825 12.3596 12.3803 12.682C12.0781 13.0044 11.6651 13.1656 11.1412 13.1656C10.8726 13.1656 10.614 13.1152 10.3655 13.0144C10.117 12.907 9.92226 12.7189 9.78123 12.4503C9.72078 12.6048 9.64691 12.729 9.5596 12.823C9.47229 12.9171 9.38162 12.9909 9.2876 13.0447C9.19358 13.0917 9.09284 13.1253 8.98538 13.1454C8.88464 13.1588 8.78726 13.1656 8.69324 13.1656H8.53205C8.44475 13.1656 8.38766 13.1387 8.3608 13.085C8.32722 13.0312 8.31043 12.9473 8.31043 12.8331C8.31043 12.7122 8.32722 12.6216 8.3608 12.5611C8.38766 12.5007 8.44475 12.4705 8.53205 12.4705H8.69324ZM12.1889 11.3925C12.1889 11.0433 12.1117 10.7612 11.9572 10.5463C11.8027 10.3247 11.5375 10.2139 11.1614 10.2139C10.4629 10.2139 10.1137 10.6202 10.1137 11.4328C10.1137 11.7754 10.2077 12.0339 10.3957 12.2085C10.5905 12.3831 10.839 12.4705 11.1412 12.4705C11.4837 12.4705 11.7423 12.3764 11.9169 12.1884C12.0982 12.0003 12.1889 11.7351 12.1889 11.3925Z" fill="currentColor"></path>
+                                </svg></span>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="card-footer border-white">
+                        <a href="#" class="nav-link text-primary d-flex justify-content-center fw-bold">مشاهده اطلاعات دوره<i class="bi bi-caret-left-fill"></i></a>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mt-md-5  mb-5 mb-md-0 col-xl-3">
+                    <div class="card h-100 px-3 card-bg position-relative mt-md-3">
+                        <img src="https://static.roocket.ir/images/cover/2024/3/14/qmLca1lqtoFe1kwJmBGe5lJ9ET17agVL2D8nQGwb.jpg" alt="" class="rounded card-img-top position-absolute-img">
+                        <div class="d-flex align-items-center">
+                            <span class="text-primary px-0"><i class="bi bi-dot"></i>به زودی</span>
+                            <span class="text-danger px-1"><i class="bi bi-dot"></i>پیش فرض</span>
+                        </div>
+                        <div class="card-body px-0 d-flex flex-column justify-content-between">
+                        <h6 class="fs-5 text-white fw-bold">آموزش پروژه محور طراحی سایت</h6>
+                        <p class="card-text text-white lh-lg fw-normal text-sm">
+                            آموزش پروژه محور طراحی سایت به شما کمک می‌کند که به سادگی بتوانید پروژه‌های طراحی سایت خود را پیاده‌سازی کنید.</p>
+                        <span class="text-white fw-semibold text-13"><i class="bi bi-star-fill text-warning px-1"></i>دسترسی رایگان برای اعضای ویژه</span>
+                        <div class="d-flex flex-column justify-content-between">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="text-danger rounded bg-white py-1 text-10 d-flex align-items-center fw-bold">پیش فروش برای خرید نقدی</span>
+                                <s class="text-white-50 fs-4 lead d-flex align-items-center">990,000<svg class="mr-1 " width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path class="text-gray-880 dark:text-white" d="M1.14878 6.91843C1.44428 6.91843 1.70285 6.87142 1.92447 6.77739C2.15282 6.68337 2.34422 6.55577 2.49869 6.39458C2.65316 6.2334 2.77069 6.04535 2.85128 5.83044C2.93187 5.62224 2.97888 5.40062 2.99231 5.16556H1.98492C1.6424 5.16556 1.36033 5.12862 1.1387 5.05474C0.917077 4.98087 0.742461 4.87341 0.614858 4.73238C0.487254 4.59134 0.396588 4.42344 0.34286 4.22868C0.295849 4.0272 0.272343 3.80221 0.272343 3.55372C0.272343 3.29852 0.309281 3.05674 0.383156 2.8284C0.457032 2.60005 0.564488 2.39857 0.705523 2.22396C0.846559 2.04934 1.02117 1.91167 1.22937 1.81093C1.44428 1.70347 1.68941 1.64974 1.96477 1.64974C2.1864 1.64974 2.39795 1.68668 2.59943 1.76056C2.80091 1.83443 2.97888 1.95196 3.13335 2.11315C3.28782 2.26761 3.40871 2.47245 3.49601 2.72766C3.59004 2.97615 3.63705 3.27837 3.63705 3.63431V4.47045H4.60415C4.68474 4.47045 4.73847 4.50068 4.76533 4.56112C4.79891 4.61485 4.8157 4.6988 4.8157 4.81297C4.8157 4.93386 4.79891 5.02452 4.76533 5.08497C4.73847 5.13869 4.68474 5.16556 4.60415 5.16556H3.6169C3.60347 5.49464 3.53631 5.80693 3.41542 6.10244C3.30125 6.39794 3.14007 6.65651 2.93187 6.87813C2.72368 7.09976 2.47518 7.27438 2.1864 7.40198C1.89761 7.5363 1.57188 7.60346 1.20922 7.60346H0.141381L0.0809373 6.91843H1.14878ZM0.896929 3.51343C0.896929 3.68133 0.913719 3.82572 0.947299 3.94661C0.987594 4.0675 1.0514 4.16823 1.1387 4.24883C1.23273 4.3227 1.35697 4.37979 1.51144 4.42008C1.66591 4.45366 1.86067 4.47045 2.09573 4.47045H3.00239V3.71491C3.00239 3.21792 2.90501 2.86198 2.71024 2.64707C2.51548 2.43215 2.24684 2.3247 1.90433 2.3247C1.58196 2.3247 1.33347 2.43215 1.15885 2.64707C0.984237 2.86198 0.896929 3.15076 0.896929 3.51343ZM6.26895 4.47045C6.35626 4.47045 6.41335 4.50068 6.44021 4.56112C6.47379 4.61485 6.49058 4.6988 6.49058 4.81297C6.49058 4.93386 6.47379 5.02452 6.44021 5.08497C6.41335 5.13869 6.35626 5.16556 6.26895 5.16556H4.60675C4.51944 5.16556 4.46235 5.13869 4.43549 5.08497C4.40191 5.03124 4.38512 4.94729 4.38512 4.83312C4.38512 4.71223 4.40191 4.62156 4.43549 4.56112C4.46235 4.50068 4.51944 4.47045 4.60675 4.47045H6.26895ZM7.93155 4.47045C8.01886 4.47045 8.07594 4.50068 8.10281 4.56112C8.13639 4.61485 8.15318 4.6988 8.15318 4.81297C8.15318 4.93386 8.13639 5.02452 8.10281 5.08497C8.07594 5.13869 8.01886 5.16556 7.93155 5.16556H6.26935C6.18204 5.16556 6.12495 5.13869 6.09809 5.08497C6.06451 5.03124 6.04772 4.94729 6.04772 4.83312C6.04772 4.71223 6.06451 4.62156 6.09809 4.56112C6.12495 4.50068 6.18204 4.47045 6.26935 4.47045H7.93155ZM9.59415 4.47045C9.68146 4.47045 9.73854 4.50068 9.76541 4.56112C9.79899 4.61485 9.81578 4.6988 9.81578 4.81297C9.81578 4.93386 9.79899 5.02452 9.76541 5.08497C9.73854 5.13869 9.68146 5.16556 9.59415 5.16556H7.93194C7.84464 5.16556 7.78755 5.13869 7.76069 5.08497C7.72711 5.03124 7.71032 4.94729 7.71032 4.83312C7.71032 4.71223 7.72711 4.62156 7.76069 4.56112C7.78755 4.50068 7.84464 4.47045 7.93194 4.47045H9.59415ZM11.2567 4.47045C11.3441 4.47045 11.4011 4.50068 11.428 4.56112C11.4616 4.61485 11.4784 4.6988 11.4784 4.81297C11.4784 4.93386 11.4616 5.02452 11.428 5.08497C11.4011 5.13869 11.3441 5.16556 11.2567 5.16556H9.59454C9.50723 5.16556 9.45015 5.13869 9.42328 5.08497C9.3897 5.03124 9.37291 4.94729 9.37291 4.83312C9.37291 4.71223 9.3897 4.62156 9.42328 4.56112C9.45015 4.50068 9.50723 4.47045 9.59454 4.47045H11.2567ZM12.1638 4.47045C12.4257 4.47045 12.6339 4.39994 12.7884 4.2589C12.9496 4.11787 13.0302 3.9231 13.0302 3.67461V2.2844H13.685V3.67461C13.685 4.15144 13.5506 4.52082 13.282 4.78275C13.0201 5.03795 12.6608 5.16556 12.2041 5.16556H11.2571C11.1698 5.16556 11.1127 5.13869 11.0859 5.08497C11.0523 5.03124 11.0355 4.94729 11.0355 4.83312C11.0355 4.71223 11.0523 4.62156 11.0859 4.56112C11.1127 4.50068 11.1698 4.47045 11.2571 4.47045H12.1638ZM13.7857 0.994934H12.9798V0.279683H13.7857V0.994934ZM12.5063 0.994934H11.7004V0.279683H12.5063V0.994934ZM5.64177 12.9641C5.64177 13.3267 5.58468 13.6659 5.47051 13.9815C5.35634 14.3039 5.1918 14.5826 4.97689 14.8177C4.76198 15.0595 4.50005 15.2509 4.19112 15.3919C3.8889 15.5329 3.54638 15.6035 3.16357 15.6035H2.56921C1.81702 15.6035 1.23273 15.3718 0.816337 14.9084C0.399946 14.445 0.191751 13.8103 0.191751 13.0044V11.2414H0.836485V12.9842C0.836485 13.273 0.870065 13.5349 0.937225 13.77C1.0111 14.0051 1.12191 14.2065 1.26967 14.3744C1.42413 14.549 1.61554 14.6834 1.84388 14.7774C2.07223 14.8714 2.34758 14.9184 2.66995 14.9184H3.1132C3.42885 14.9184 3.70421 14.8647 3.93927 14.7572C4.17433 14.6565 4.36909 14.5188 4.52356 14.3442C4.68474 14.1696 4.80227 13.9648 4.87615 13.7297C4.95674 13.4946 4.99703 13.2495 4.99703 12.9943V10.2844H5.64177V12.9641ZM3.21394 10.0628H2.36773V9.32738H3.21394V10.0628ZM8.24526 13.1656C8.07064 13.1656 7.90274 13.1421 7.74156 13.095C7.58038 13.0413 7.43598 12.954 7.30838 12.8331C7.18749 12.7122 7.09011 12.5544 7.01624 12.3596C6.94236 12.1582 6.90542 11.9097 6.90542 11.6142V6.9197H7.56023V11.4933C7.56023 11.7754 7.62067 12.0104 7.74156 12.1985C7.86916 12.3798 8.074 12.4705 8.35607 12.4705H8.52733C8.67508 12.4705 8.74896 12.5846 8.74896 12.813C8.74896 13.048 8.67508 13.1656 8.52733 13.1656H8.24526ZM8.69324 12.4705C8.95516 12.4705 9.15328 12.4067 9.2876 12.279C9.42192 12.1514 9.48908 11.9802 9.48908 11.7653V11.3825C9.48908 10.7982 9.63683 10.3415 9.93233 10.0124C10.2346 9.68332 10.6509 9.51878 11.1815 9.51878C11.4569 9.51878 11.6986 9.56243 11.9068 9.64974C12.115 9.73705 12.2863 9.8613 12.4206 10.0225C12.5616 10.1837 12.6657 10.3751 12.7329 10.5967C12.8001 10.8183 12.8336 11.0635 12.8336 11.3321C12.8336 11.9097 12.6825 12.3596 12.3803 12.682C12.0781 13.0044 11.6651 13.1656 11.1412 13.1656C10.8726 13.1656 10.614 13.1152 10.3655 13.0144C10.117 12.907 9.92226 12.7189 9.78123 12.4503C9.72078 12.6048 9.64691 12.729 9.5596 12.823C9.47229 12.9171 9.38162 12.9909 9.2876 13.0447C9.19358 13.0917 9.09284 13.1253 8.98538 13.1454C8.88464 13.1588 8.78726 13.1656 8.69324 13.1656H8.53205C8.44475 13.1656 8.38766 13.1387 8.3608 13.085C8.32722 13.0312 8.31043 12.9473 8.31043 12.8331C8.31043 12.7122 8.32722 12.6216 8.3608 12.5611C8.38766 12.5007 8.44475 12.4705 8.53205 12.4705H8.69324ZM12.1889 11.3925C12.1889 11.0433 12.1117 10.7612 11.9572 10.5463C11.8027 10.3247 11.5375 10.2139 11.1614 10.2139C10.4629 10.2139 10.1137 10.6202 10.1137 11.4328C10.1137 11.7754 10.2077 12.0339 10.3957 12.2085C10.5905 12.3831 10.839 12.4705 11.1412 12.4705C11.4837 12.4705 11.7423 12.3764 11.9169 12.1884C12.0982 12.0003 12.1889 11.7351 12.1889 11.3925Z" fill="currentColor"></path>
+                                </svg></s>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <span class="text-white fw-bolder text-10 d-flex align-items-center">تاپایان<span class="text-secondary ms-2">46 روز و 18 ساعت</span></span>
+                                </div>
+                                <span class="text-white fs-3 fw-bold d-flex align-items-center">495,000<svg class="mr-1 " width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path class="text-gray-880 dark:text-white" d="M1.14878 6.91843C1.44428 6.91843 1.70285 6.87142 1.92447 6.77739C2.15282 6.68337 2.34422 6.55577 2.49869 6.39458C2.65316 6.2334 2.77069 6.04535 2.85128 5.83044C2.93187 5.62224 2.97888 5.40062 2.99231 5.16556H1.98492C1.6424 5.16556 1.36033 5.12862 1.1387 5.05474C0.917077 4.98087 0.742461 4.87341 0.614858 4.73238C0.487254 4.59134 0.396588 4.42344 0.34286 4.22868C0.295849 4.0272 0.272343 3.80221 0.272343 3.55372C0.272343 3.29852 0.309281 3.05674 0.383156 2.8284C0.457032 2.60005 0.564488 2.39857 0.705523 2.22396C0.846559 2.04934 1.02117 1.91167 1.22937 1.81093C1.44428 1.70347 1.68941 1.64974 1.96477 1.64974C2.1864 1.64974 2.39795 1.68668 2.59943 1.76056C2.80091 1.83443 2.97888 1.95196 3.13335 2.11315C3.28782 2.26761 3.40871 2.47245 3.49601 2.72766C3.59004 2.97615 3.63705 3.27837 3.63705 3.63431V4.47045H4.60415C4.68474 4.47045 4.73847 4.50068 4.76533 4.56112C4.79891 4.61485 4.8157 4.6988 4.8157 4.81297C4.8157 4.93386 4.79891 5.02452 4.76533 5.08497C4.73847 5.13869 4.68474 5.16556 4.60415 5.16556H3.6169C3.60347 5.49464 3.53631 5.80693 3.41542 6.10244C3.30125 6.39794 3.14007 6.65651 2.93187 6.87813C2.72368 7.09976 2.47518 7.27438 2.1864 7.40198C1.89761 7.5363 1.57188 7.60346 1.20922 7.60346H0.141381L0.0809373 6.91843H1.14878ZM0.896929 3.51343C0.896929 3.68133 0.913719 3.82572 0.947299 3.94661C0.987594 4.0675 1.0514 4.16823 1.1387 4.24883C1.23273 4.3227 1.35697 4.37979 1.51144 4.42008C1.66591 4.45366 1.86067 4.47045 2.09573 4.47045H3.00239V3.71491C3.00239 3.21792 2.90501 2.86198 2.71024 2.64707C2.51548 2.43215 2.24684 2.3247 1.90433 2.3247C1.58196 2.3247 1.33347 2.43215 1.15885 2.64707C0.984237 2.86198 0.896929 3.15076 0.896929 3.51343ZM6.26895 4.47045C6.35626 4.47045 6.41335 4.50068 6.44021 4.56112C6.47379 4.61485 6.49058 4.6988 6.49058 4.81297C6.49058 4.93386 6.47379 5.02452 6.44021 5.08497C6.41335 5.13869 6.35626 5.16556 6.26895 5.16556H4.60675C4.51944 5.16556 4.46235 5.13869 4.43549 5.08497C4.40191 5.03124 4.38512 4.94729 4.38512 4.83312C4.38512 4.71223 4.40191 4.62156 4.43549 4.56112C4.46235 4.50068 4.51944 4.47045 4.60675 4.47045H6.26895ZM7.93155 4.47045C8.01886 4.47045 8.07594 4.50068 8.10281 4.56112C8.13639 4.61485 8.15318 4.6988 8.15318 4.81297C8.15318 4.93386 8.13639 5.02452 8.10281 5.08497C8.07594 5.13869 8.01886 5.16556 7.93155 5.16556H6.26935C6.18204 5.16556 6.12495 5.13869 6.09809 5.08497C6.06451 5.03124 6.04772 4.94729 6.04772 4.83312C6.04772 4.71223 6.06451 4.62156 6.09809 4.56112C6.12495 4.50068 6.18204 4.47045 6.26935 4.47045H7.93155ZM9.59415 4.47045C9.68146 4.47045 9.73854 4.50068 9.76541 4.56112C9.79899 4.61485 9.81578 4.6988 9.81578 4.81297C9.81578 4.93386 9.79899 5.02452 9.76541 5.08497C9.73854 5.13869 9.68146 5.16556 9.59415 5.16556H7.93194C7.84464 5.16556 7.78755 5.13869 7.76069 5.08497C7.72711 5.03124 7.71032 4.94729 7.71032 4.83312C7.71032 4.71223 7.72711 4.62156 7.76069 4.56112C7.78755 4.50068 7.84464 4.47045 7.93194 4.47045H9.59415ZM11.2567 4.47045C11.3441 4.47045 11.4011 4.50068 11.428 4.56112C11.4616 4.61485 11.4784 4.6988 11.4784 4.81297C11.4784 4.93386 11.4616 5.02452 11.428 5.08497C11.4011 5.13869 11.3441 5.16556 11.2567 5.16556H9.59454C9.50723 5.16556 9.45015 5.13869 9.42328 5.08497C9.3897 5.03124 9.37291 4.94729 9.37291 4.83312C9.37291 4.71223 9.3897 4.62156 9.42328 4.56112C9.45015 4.50068 9.50723 4.47045 9.59454 4.47045H11.2567ZM12.1638 4.47045C12.4257 4.47045 12.6339 4.39994 12.7884 4.2589C12.9496 4.11787 13.0302 3.9231 13.0302 3.67461V2.2844H13.685V3.67461C13.685 4.15144 13.5506 4.52082 13.282 4.78275C13.0201 5.03795 12.6608 5.16556 12.2041 5.16556H11.2571C11.1698 5.16556 11.1127 5.13869 11.0859 5.08497C11.0523 5.03124 11.0355 4.94729 11.0355 4.83312C11.0355 4.71223 11.0523 4.62156 11.0859 4.56112C11.1127 4.50068 11.1698 4.47045 11.2571 4.47045H12.1638ZM13.7857 0.994934H12.9798V0.279683H13.7857V0.994934ZM12.5063 0.994934H11.7004V0.279683H12.5063V0.994934ZM5.64177 12.9641C5.64177 13.3267 5.58468 13.6659 5.47051 13.9815C5.35634 14.3039 5.1918 14.5826 4.97689 14.8177C4.76198 15.0595 4.50005 15.2509 4.19112 15.3919C3.8889 15.5329 3.54638 15.6035 3.16357 15.6035H2.56921C1.81702 15.6035 1.23273 15.3718 0.816337 14.9084C0.399946 14.445 0.191751 13.8103 0.191751 13.0044V11.2414H0.836485V12.9842C0.836485 13.273 0.870065 13.5349 0.937225 13.77C1.0111 14.0051 1.12191 14.2065 1.26967 14.3744C1.42413 14.549 1.61554 14.6834 1.84388 14.7774C2.07223 14.8714 2.34758 14.9184 2.66995 14.9184H3.1132C3.42885 14.9184 3.70421 14.8647 3.93927 14.7572C4.17433 14.6565 4.36909 14.5188 4.52356 14.3442C4.68474 14.1696 4.80227 13.9648 4.87615 13.7297C4.95674 13.4946 4.99703 13.2495 4.99703 12.9943V10.2844H5.64177V12.9641ZM3.21394 10.0628H2.36773V9.32738H3.21394V10.0628ZM8.24526 13.1656C8.07064 13.1656 7.90274 13.1421 7.74156 13.095C7.58038 13.0413 7.43598 12.954 7.30838 12.8331C7.18749 12.7122 7.09011 12.5544 7.01624 12.3596C6.94236 12.1582 6.90542 11.9097 6.90542 11.6142V6.9197H7.56023V11.4933C7.56023 11.7754 7.62067 12.0104 7.74156 12.1985C7.86916 12.3798 8.074 12.4705 8.35607 12.4705H8.52733C8.67508 12.4705 8.74896 12.5846 8.74896 12.813C8.74896 13.048 8.67508 13.1656 8.52733 13.1656H8.24526ZM8.69324 12.4705C8.95516 12.4705 9.15328 12.4067 9.2876 12.279C9.42192 12.1514 9.48908 11.9802 9.48908 11.7653V11.3825C9.48908 10.7982 9.63683 10.3415 9.93233 10.0124C10.2346 9.68332 10.6509 9.51878 11.1815 9.51878C11.4569 9.51878 11.6986 9.56243 11.9068 9.64974C12.115 9.73705 12.2863 9.8613 12.4206 10.0225C12.5616 10.1837 12.6657 10.3751 12.7329 10.5967C12.8001 10.8183 12.8336 11.0635 12.8336 11.3321C12.8336 11.9097 12.6825 12.3596 12.3803 12.682C12.0781 13.0044 11.6651 13.1656 11.1412 13.1656C10.8726 13.1656 10.614 13.1152 10.3655 13.0144C10.117 12.907 9.92226 12.7189 9.78123 12.4503C9.72078 12.6048 9.64691 12.729 9.5596 12.823C9.47229 12.9171 9.38162 12.9909 9.2876 13.0447C9.19358 13.0917 9.09284 13.1253 8.98538 13.1454C8.88464 13.1588 8.78726 13.1656 8.69324 13.1656H8.53205C8.44475 13.1656 8.38766 13.1387 8.3608 13.085C8.32722 13.0312 8.31043 12.9473 8.31043 12.8331C8.31043 12.7122 8.32722 12.6216 8.3608 12.5611C8.38766 12.5007 8.44475 12.4705 8.53205 12.4705H8.69324ZM12.1889 11.3925C12.1889 11.0433 12.1117 10.7612 11.9572 10.5463C11.8027 10.3247 11.5375 10.2139 11.1614 10.2139C10.4629 10.2139 10.1137 10.6202 10.1137 11.4328C10.1137 11.7754 10.2077 12.0339 10.3957 12.2085C10.5905 12.3831 10.839 12.4705 11.1412 12.4705C11.4837 12.4705 11.7423 12.3764 11.9169 12.1884C12.0982 12.0003 12.1889 11.7351 12.1889 11.3925Z" fill="currentColor"></path>
+                                </svg></span>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="card-footer border-white">
+                        <a href="#" class="nav-link text-primary d-flex justify-content-center fw-bold">مشاهده اطلاعات دوره<i class="bi bi-caret-left-fill"></i></a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+     <!-- end card section -->
+     <!-- start carousel card -->
+     <section class="pt-5">
+        <div class="container-xxl">
+            <div class="row">
+                <div class="col-md-12 col-lg-6 text-center text-lg-start mb-3 mb-lg-0">
+                        <h4 class="text-white display-6 fw-bold">مسیر یادگیری</h4>
+                </div>
+                <div class="col-md-12 col-lg-6 mt-1 mt-md-0 text-center text-lg-end">
+                    <a href="#" class="hover-a nav-link text-white fw-bold fs-4 mb-5 mb-md-0">مشاهده همه مسیر های یادگیری<i class="bi bi-caret-left-fill"></i></a>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-sm-12">
+                    <div id="carousel-parent" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators mt-3">
+                            <button type="button" data-bs-target="#carousel-parent" data-bs-slide-to="0" class="active"></button>
+                            <button type="button" data-bs-target="#carousel-parent" data-bs-slide-to="1"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="false">
+                                <div class="container">
+                                    <div class="row d-flex justify-content-center">
+                                        <div class="col-lg-4 col-md-6">
+                                            <div class="card h-100 bg-transparent text-white  rounded border-secondary d-flex justify-content-between flex-column">
+                                                <div class="card-header d-flex justify-content-between align-items-center border-0 mt-3">
+                                                    <span class="bg-warning rounded px-3 py-2 fs-1 fw-bold text-black">JS</span>
+                                                    <span class="border border-primary rounded"><i class="bi bi-mortarboard-fill text-primary"></i>شامل 8 دوره</span>
+                                                </div>
+                                                <div class="card-body">
+                                                    <h5 class="card-title">آموزش جاوا اسکریپ</h5>
+                                                    <p class="card-text">آموزش جاوااسکریپت (js) از صفر تا صد با بیان مباحث مقدماتی تا پیشرفته به همراه مدرسین مجرب در مجموعه آموزشی راکت</p>
+                                                </div>
+                                                <div class="card-footer border-white">
+                                                    <a href="#" class="nav-link fw-bold text-primary d-flex justify-content-end align-items-center">مشاهده اطلاعات مسیر یادگیری<i class="bi bi-caret-left-fill"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-6 my-3 my-md-0">
+                                            <div class="card h-100 bg-transparent text-white rounded border-secondary d-flex justify-content-between flex-column">
+                                                <div class="card-header d-flex justify-content-between align-items-center border-0 mt-3">
+                                                    <span class="bg-success rounded py-3 px-1 fs-3 fw-bold text-white">WEB</span>
+                                                    <span class="border border-primary rounded"><i class="bi bi-mortarboard-fill text-primary"></i>شامل12 دوره</span>
+                                                </div>
+                                                <div class="card-body">
+                                                    <h5 class="card-title">طراحی سایت</h5>
+                                                    <p class="card-text">آموزش طراحی سایت صفر تا صد پروژه محور به صورت کامل را از طریق مدرسین مجرب مجموعه آموزشی راکت یاد بگیرید.</p>
+                                                </div>
+                                                <div class="card-footer border-white">
+                                                    <a href="#" class="nav-link fw-bold text-primary d-flex justify-content-end align-items-center">مشاهده اطلاعات مسیر یادگیری<i class="bi bi-caret-left-fill"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-6 mt-md-3 mt-lg-0">
+                                            <div class="card h-100 bg-transparent text-white  rounded border-secondary d-flex justify-content-between flex-column">
+                                                <div class="card-header d-flex justify-content-between align-items-center border-0 mt-3">
+                                                    <span class="bg-danger rounded py-3 px-4 fs-5 fw-bold"><i class="fa-brands fa-laravel fs-1"></i></span>
+                                                    <span class="border border-primary rounded"><i class="bi bi-mortarboard-fill text-primary"></i>شامل12 دوره</span>
+                                                </div>
+                                                <div class="card-body">
+                                                    <h5 class="card-title">آموزش لاراول</h5>
+                                                    <p class="card-text">لاراول پر استفاده‌ترین فریمورک زبان برنامه نویسی PHP بوده و در سال‌های اخیر توسط شرکت‌ها و استارتاپ‌های بسیار زیادی مورد...</p>
+                                                </div>
+                                                <div class="card-footer border-white">
+                                                    <a href="#" class="nav-link fw-bold text-primary d-flex justify-content-end align-items-center">مشاهده اطلاعات مسیر یادگیری<i class="bi bi-caret-left-fill"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="container">
+                                    <div class="row d-flex justify-content-center">
+                                        <div class="col-lg-4 col-md-6">
+                                            <div class="card h-100 bg-transparent text-white rounded border-secondary d-flex justify-content-between flex-column">
+                                                <div class="card-header d-flex justify-content-between align-items-center border-0 mt-3">
+                                                    <span class="bg-primary rounded p-1 fs-3 fw-bold">php</span>
+                                                    <span class="border border-primary rounded"><i class="bi bi-mortarboard-fill text-primary"></i>شامل12 دوره</span>
+                                                </div>
+                                                <div class="card-body">
+                                                    <h5 class="card-title">آموزش PHP</h5>
+                                                    <p class="card-text">PHP محبوب‌ترین زبان برنامه نویسی حوزه وب است. بیش از ۵۰ درصد وبسایت‌های دنیا با استفاده از این زبان و تکنولوژی های مربوط...</p>
+                                                </div>
+                                                <div class="card-footer border-white">
+                                                    <a href="#" class="nav-link fw-bold text-primary d-flex justify-content-end align-items-center">مشاهده اطلاعات مسیر یادگیری<i class="bi bi-caret-left-fill"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-6">
+                                            <div class="card h-100 bg-transparent text-white rounded border-secondary d-flex justify-content-between flex-column">
+                                                <div class="card-header d-flex justify-content-between align-items-center border-0 mt-3">
+                                                    <span class="bg-info rounded fs-1 px-2 fw-bold text-white"><i class="fa-brands fa-react"></i></span>
+                                                    <span class="border border-primary rounded"><i class="bi bi-mortarboard-fill text-primary"></i>شامل12 دوره</span>
+                                                </div>
+                                                <div class="card-body">
+                                                    <h5 class="card-title">آموزش React</h5>
+                                                    <p class="card-text">React محبوب‌ترین فریمورک توسعه رابط کاربری و اپلیکیشن‌های SPA است که توسط شرکت فیسبوک ایجاد شده است. React از زبان جاوا...</p>
+                                                </div>
+                                                <div class="card-footer border-white">
+                                                    <a href="#" class="nav-link fw-bold text-primary d-flex justify-content-end align-items-center">مشاهده اطلاعات مسیر یادگیری<i class="bi bi-caret-left-fill"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+     <!-- end carousel card -->
+
+     <!-- start about rocket -->
+     <section class="py-5">
+        <div class="container-xl">
+            <div class="row my-5">
+                    <div class="carousel slide d-lg-flex align-items-center " id="carousel-parent-1" data-bs-ride="carousel">
+                        <div class="col-lg-6 col-md-12 position-relative text-center text-lg-start">
+                            <h5 class="fw-bold text-white display-6">درباره ی راکت چه میشنویم؟</h5>
+                            <p class="text-white lh-lg mw-24 fw-semibold mx-auto mx-lg-0 mt-3 mt-lg-0">این‌ها، بخش خیلی کوچکی از نظراتی هستند که افراد مختلف در مورد راکت دارند.</p>
+                        <div class="carousel-indicators position-absolute right-0 d-flex justify-content-lg-start justify-content-md-center py-3">
+                            <button type="button" data-bs-target="#carousel-parent-1" data-bs-slide-to="0" class="active"></button>
+                            <button type="button" data-bs-target="#carousel-parent-1" data-bs-slide-to="1"></button>
+                        </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="card rounded card-bg py-5 px-1 mt-5">
+                                        <div class="card-body">
+                                            <h5 class="card-title text-center fs-6 lh-lg text-white">راکت شاید تنها ترین مجموعه در ایران باشد، که آموزش های کاربردی، بروز و پروژه محور متناسب با نیاز بازار داخلی و جهانی ارائه میده! دمتون گرم</h5>
+                                        <div class="d-flex justify-content-center align-items-center mt-4">
+                                            <img src="https://static.roocket.ir/images/editor/2021/12/14/rtXU1eTwgxpOPcFllmMuXAnss2avQ7sWGsiZcEr5.jpg" alt="" class="img-fluid border border-5 rounded-circle not-hover">
+                                            <div class="d-flex flex-column ms-3">
+                                                <h5 class="text-white fw-bold fs-6">مهدی علیپور</h5>
+                                                <span class="fs-6 text-secondary">کارآفرین، طراح رفتار و مربی بین المللی</span>
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="card rounded card-bg py-3 px-1 mt-5">
+                                        <div class="card-body">
+                                            <h5 class="card-title text-center fs-6 lh-lg text-white py-md-3 py-lg-0">به واسطه فیلد کاری متفاوت، من تجربه استفاده از دوره ها راکت رو نداشتم ولی هر کدوم از بچه های تیم‌ فنی‌مون که یک دوره از مجموعه راکت تهیه کرده،‌ هم رضایت بالایی داشتند هم دوره ها براشون خیلی کاربردی بوده. تبریک میگم به حسام موسوی عزیز برای دوره های ارزشمندی که خلق کرده</h5>
+                                        <div class="d-flex justify-content-center align-items-center mt-4">
+                                            <img src="https://static.roocket.ir/images/editor/2021/12/14/5tgV6yVjqjZTEIcdee3Dktt79tNe5R5Qo3lYhCBL.jpg" alt="" class="img-fluid border border-5 rounded-circle not-hover">
+                                            <div class="d-flex flex-column ms-3">
+                                                <h5 class="text-white fw-bold fs-6">وحید بهرامیان</h5>
+                                                <span class="fs-6 text-secondary">مدیر محصول ژاکت</span>
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+     </section>
+     <!-- end about rocket -->
+     <!-- start articels -->
+     <article class="py-5 my-5">
+        <div class="container-xxl">
+            <div class="rounded text-white">
+                <div class="row row-cols-lg-2 darknavbar mt-lg-5 position-relative">
+                    <div class="col-lg-6 d-flex justify-content-center flex-column text-center text-lg-start ps-5 py-5">
+                        <h5 class="display-6 fw-bold">از گوشه و اطراف دنیای برنامه نویسی</h5>
+                        <p class="fs-4 fw-lighter">نوشتن کار جالبیه که از هزاران سال همراه ما بوده و کمک کرده تا همیشه به روز باشیم، ما در راکت فضای رو به شکلی آماده کردیم تا شما بتونید ایده‌ها و مطالب جالب حوزه برنامه‌نویسی رو در اختیار هزاران برنامه‌نویس عضو راکت قرار بدید.</p>
+                    <a href="" class="btn btn-primary mx-auto mx-lg-0 w-lg-50 mt-3">مشاهده همه مطالب<i class="bi bi-caret-left-fill"></i></a>
+                    </div>
+                    <div class="col-lg-6 my-5">
+                        <div class="row position-relative-lg">
+                            <div class="col-12 mt-3 col-md-6 mt-md-0">
+                                <div class="card card-bg rounded p-2 text-white h-100 ">
+                                    <img src="https://static.roocket.ir/images/cover/2024/5/13/NZDFhiTbH4DajeV8SEGVDKNaUm0COiaJ4jTJVvEA.png" alt="" class="img-fluid rounded">
+                                <div class="card-body px-0 d-flex flex-column justify-content-between">
+                                    <h6 class="card-title fs-5 fw-bold lh-base">چگونه برای استخدام شدن به‌ عنوان توسعه‌دهنده آماده شویم؟</h6>
+                                    <div class="d-flex align-items-center mt-2">
+                                        <img src="https://static.roocket.ir/images/avatar/2023/2/5/ThCiqhT8ALabLlRbp7qB6JJTlGWgAZBC8Krvfd7L.png" alt="" class=" not-hover img-fluid rounded-circle border border-3 border-white" style="width:10%;">
+                                        <span class="text-13 ms-1">ارسطو عباسی</span>
+                                        <span class="rounded darknavbar text-primary ms-auto text-13 p-1"><i class="bi bi-file-earmark"></i>کسب وکار</span>
+                                    </div>
+                                    <div class="card-footer d-flex align-items-center border-0 px-0 mt-2">
+                                        <span class="rounded bg-secondary p-1 text-13"><i class="bi bi-chat-right-text me-1"></i>0</span>
+                                        <span class="rounded red-dark text-danger ms-1 p-1 text-13"><i class="bi bi-heart me-1"></i>0</span>
+                                        <span class="rounded text-13 text-primary lightnavbar p-1 ms-1"><i class="bi bi-file-earmark-text"></i></span>
+                                        <span class=" text-10 fw-bold ms-auto"><i class="bi bi-watch"></i>زمان مطالعه 6 دقیقه</span>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="col-12 mt-3 col-md-6 mt-md-0">
+                                <div class="card card-bg rounded p-2 text-white h-100">
+                                    <img src="https://static.roocket.ir/images/cover/2024/5/10/tWg08duceFJ6rttzTYFVUu2HJR2rOXRnYzYgevJI.jpg" alt="" class="img-fluid rounded">
+                                <div class="card-body px-0 d-flex flex-column justify-content-between">
+                                    <h6 class="card-title fs-5 fw-bold lh-base">شغل برنامه‌نویسی از بزرگ‌ترین دشمنان سلامت است! چگونه بر آن غلبه کنیم؟</h6>
+                                    <div class="d-flex align-items-center mb-3">
+                                        <img src="https://static.roocket.ir/images/avatar/2023/2/5/ThCiqhT8ALabLlRbp7qB6JJTlGWgAZBC8Krvfd7L.png" alt="" class=" not-hover img-fluid rounded-circle border border-3 border-white" style="width:10%;">
+                                        <span class="text-13 ms-1">ارسطو عباسی</span>
+                                        <span class="rounded darknavbar text-primary ms-auto text-13 p-1"><i class="bi bi-file-earmark"></i>توسعه فردی</span>
+                                    </div>
+                                    <div class="card-footer d-flex align-items-center border-0 px-0">
+                                        <span class="rounded bg-secondary p-1 text-13"><i class="bi bi-chat-right-text me-1"></i>0</span>
+                                        <span class="rounded red-dark text-danger ms-1 p-1 text-13"><i class="bi bi-heart me-1"></i>1</span>
+                                        <span class="rounded text-13 text-primary lightnavbar p-1 ms-1"><i class="bi bi-file-earmark-text"></i></span>
+                                        <span class=" text-10 fw-bold ms-auto"><i class="bi bi-watch"></i>زمان مطالعه 8 دقیقه</span>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row position-relative-lg">
+                            <div class="col-12 mt-3 col-md-6 mt-md-0">
+                                <div class="card card-bg rounded p-2 text-white h-100 mt-3">
+                                    <img src="https://static.roocket.ir/images/cover/2024/5/11/qVDHRPmlxqN1REbwVwBGbkwV5YZyzgJp29ODYr0i.jpg" alt="" class="img-fluid rounded">
+                                <div class="card-body px-0 d-flex flex-column justify-content-between">
+                                    <h6 class="card-title fs-5 fw-bold lh-base">چگونه وبسایت سریع‌تری داشته باشیم؟</h6>
+                                    <div class="d-flex align-items-center mb-3">
+                                        <img src="https://static.roocket.ir/images/avatar/2023/2/5/ThCiqhT8ALabLlRbp7qB6JJTlGWgAZBC8Krvfd7L.png" alt="" class=" not-hover img-fluid rounded-circle border border-3 border-white" style="width:10%;">
+                                        <span class="text-13 ms-1">ارسطو عباسی</span>
+                                        <span class="rounded darknavbar text-primary ms-auto text-13 p-1"><i class="bi bi-file-earmark"></i>توسعه وب</span>
+                                    </div>
+                                    <div class="card-footer d-flex align-items-center border-0 px-0">
+                                        <span class="rounded bg-secondary p-1 text-13"><i class="bi bi-chat-right-text me-1"></i>0</span>
+                                        <span class="rounded red-dark text-danger ms-1 p-1 text-13"><i class="bi bi-heart me-1"></i>1</span>
+                                        <span class="rounded text-13 text-primary lightnavbar p-1 ms-1"><i class="bi bi-file-earmark-text"></i></span>
+                                        <span class=" text-10 fw-bold ms-auto"><i class="bi bi-watch"></i>زمان مطالعه 8 دقیقه</span>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="col-12 mt-3 col-md-6 mt-md-0">
+                                <div class="card card-bg rounded p-2 text-white h-100 mt-3">
+                                    <img src="https://static.roocket.ir/images/cover/2024/5/7/hnlYMDTcX3FLnR70pLYAEbR6N37FXaYcgBX83yEf.png" alt="" class="img-fluid rounded">
+                                <div class="card-body px-0 d-flex flex-column justify-content-between">
+                                    <h6 class="card-title fs-5 fw-bold lh-base">وردپرس چقدر امن است؟</h6>
+                                    <div class="d-flex align-items-center mb-3">
+                                        <img src="https://static.roocket.ir/images/avatar/2023/2/5/ThCiqhT8ALabLlRbp7qB6JJTlGWgAZBC8Krvfd7L.png" alt="" class=" not-hover img-fluid rounded-circle border border-3 border-white" style="width:10%;">
+                                        <span class="text-13 ms-1">ارسطو عباسی</span>
+                                        <span class="rounded darknavbar text-primary ms-auto text-13 p-1"><i class="bi bi-file-earmark"></i>وردپرس</span>
+                                    </div>
+                                    <div class="card-footer d-flex align-items-center border-0 px-0">
+                                        <span class="rounded bg-secondary p-1 text-13"><i class="bi bi-chat-right-text me-1"></i>0</span>
+                                        <span class="rounded red-dark text-danger ms-1 p-1 text-13"><i class="bi bi-heart me-1"></i>2</span>
+                                        <span class="rounded text-13 text-primary lightnavbar p-1 ms-1"><i class="bi bi-file-earmark-text"></i></span>
+                                        <span class=" text-10 fw-bold ms-auto"><i class="bi bi-watch"></i>زمان مطالعه 11 دقیقه</span>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="d-flex">
+                    <span class="text-white fw-semibold">موضوعات جذاب این هفته:</span>
+                     <span class="text-secondary rounded px-1 border border-1 border-secondary text-13 mx-2">#وردپرس</span>
+                     <span class="text-secondary rounded px-1 border border-1 border-secondary text-13 mx-2">#توسعه فردی</span>
+                     <span class="text-secondary rounded px-1 border border-1 border-secondary text-13 mx-2">#توسعه وب</span>
+                     <span class="text-secondary rounded px-1 border border-1 border-secondary text-13 mx-2">#کسب وکار</span>
+                </div>
+            </div>
+        </div>
+     </article>
+     <!-- end articels -->
+     <!-- start link instagram -->
+     <section class="my-5 py-5">
+        <div class="container-xl mt-5 py-5">
+            <div class="rounded-5 bg-danger py-5">
+        <div class="row position-relative text-center">
+           <div class="d-flex justify-content-md-center justify-content-lg-start">
+            <img src="https://roocket.ir/img/pic/index_instagram_phone.png" alt="" class="img-fluid mx-auto img-instagram position-absolute bottom-50">
+           </div>
+            <div class="col-lg-9 ms-auto d-flex align-items-center justify-content-around align-content-center flex-column mt-5 mt-lg-0 flex-lg-row">
+                <p class="fw-bold fs-5 text-white">ما هر روز کلی مطالب آموزشی جالب در اینستاگراممون منتشر می‌کنیم!</p>
+                <a href="" class="rounded bg-white nav-link p-2 text-13 text-primary">مشاهده پست اینستاگرام<i class="bi bi-caret-left-fill"></i></a>
+            </div>
+        </div>
+        </div>
+        </div>
+     </section>
+     <!-- end link instagram -->
+     <!-- strat rocket cast -->
+     <section class="mt-5 py-5 text-white">
+        <div class="container-xl">
+            <div class="row d-flex flex-column text-center text-md-start flex-lg-row">
+                <div class="col-lg-6 mb-3">
+                    <h5 class="display-6 fw-bold">راکت کست </h5>
+                </div>
+                <div class="col-12">
+                    <div class="row d-flex">
+                        <div class="col-md-6">
+                            <p class="fw-bold fs-5">پادکست‌های اختصاصی طراحی و برنامه‌نویسی</p>
+                        </div>
+                        <div class="col-md-6 text-md-end">
+                            <a href="" class="nav-link fs-5">مشاهده همه پادکست های صوتی<i class="bi bi-caret-left-fill"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-12">
+                    <div class="carousel slide" id="carousel-parent-2" data-bs-ride="carousel">
+                        <div class="carousel-indicators mt-5">
+                            <button type="button" data-bs-target="#carousel-parent-2" data-bs-slide-to="0" class="active"></button>
+                            <button type="button" data-bs-target="#carousel-parent-2" data-bs-slide-to="1"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col-lg-4 position-relative mb-5 m-lg-0 py-5 py-lg-0">
+                                        <div class="card card-bg rounded d-flex flex-column justify-content-between text-white h-100">
+                                            <div class="card-header d-flex align-items-center border-0">
+                                                <span class="border border-1 border-black rounded text-13 p-2"><i class="bi bi-mic-fill text-primary"></i>شماره 1065</span>
+                                                <div class="d-flex ms-auto align-items-center text-10">
+                                                    <span class="text-primary bg-dark rounded p-1 me-1"><i class="bi bi-file-earmark-text"></i></span>
+                                                    <span class="text-sm rounded darknavbar p-1 me-1"><i class="bi bi-clock me-1"></i>01:12:53</span>
+                                                    <span class="red-dark rounded text-danger px-2 py-1"><i class="bi bi-heart me-1"></i>0</span>
+                                                </div>
+                                            </div>
+                                            <div class="card-body me-5">
+                                                <h5 class="card-title">مهاجرت به هلند با بابی - قسمت دوم</h5>
+                                            </div>
+                                            <div class="card-footer border-2 d-flex justify-content-between pb-1">
+                                                <a href="#" class="nav-link text-primary fw-bold">برای گوش کردن کلیک کنید<i class="bi bi-caret-left-fill"></i></a>
+                                            </div>
+                                        </div>
+                                       <div class="w-100 d-flex justify-content-end img-position">
+                                        <img src="https://static.roocket.ir/images/cover/2024/5/12/EsDupavrDepJ3VEKQsDVMbZpkUyOJ7rkWOjtC9zQ.jpg" alt="" class="w-17 not-hover">
+                                       </div>
+                                    </div>
+                                    <div class="col-lg-4 position-relative mb-5 m-lg-0 p">
+                                        <div class="card card-bg rounded d-flex flex-column justify-content-between text-white h-100">
+                                            <div class="card-header d-flex align-items-center border-0">
+                                                <span class="border border-1 border-black rounded text-13 p-2"><i class="bi bi-mic-fill text-primary"></i>شماره 1064</span>
+                                                <div class="d-flex ms-auto align-items-center text-10">
+                                                    <span class="text-primary bg-dark rounded p-1 me-1"><i class="bi bi-file-earmark-text"></i></span>
+                                                    <span class="text-sm rounded darknavbar p-1 me-1"><i class="bi bi-clock me-1"></i>55:20</span>
+                                                    <span class="red-dark rounded text-danger px-2 py-1"><i class="bi bi-heart me-1"></i>6</span>
+                                                </div>
+                                            </div>
+                                            <div class="card-body me-5">
+                                                <h5 class="card-title">مهاجرت به هلند با بابی -قسمت اول</h5>
+                                            </div>
+                                            <div class="card-footer border-2 d-flex justify-content-between pb-1">
+                                                <a href="#" class="nav-link text-primary fw-bold">برای گوش کردن کلیک کنید<i class="bi bi-caret-left-fill"></i></a>
+                                            </div>
+                                        </div>
+                                       <div class="w-100 d-flex justify-content-end img-position">
+                                        <img src="https://static.roocket.ir/images/cover/2024/5/12/EsDupavrDepJ3VEKQsDVMbZpkUyOJ7rkWOjtC9zQ.jpg" alt="" class="w-17 not-hover">
+                                       </div>
+                                    </div>
+                                    <div class="col-lg-4 position-relative mb-5 py-5 py-lg-0 m-lg-0">
+                                        <div class="card card-bg rounded d-flex flex-column justify-content-between text-white h-100">
+                                            <div class="card-header d-flex align-items-center border-0">
+                                                <span class="border border-1 border-black rounded text-13 p-2"><i class="bi bi-mic-fill text-primary"></i>شماره 1063</span>
+                                                <div class="d-flex ms-auto align-items-center text-10">
+                                                    <span class="text-primary bg-dark rounded p-1 me-1"><i class="bi bi-file-earmark-text"></i></span>
+                                                    <span class="text-sm rounded darknavbar p-1 me-1"><i class="bi bi-clock me-1"></i> 57:48</span>
+                                                    <span class="red-dark rounded text-danger px-2 py-1"><i class="bi bi-heart me-1"></i>8</span>
+                                                </div>
+                                            </div>
+                                            <div class="card-body me-5">
+                                                <h5 class="card-title fs-6 fw-bold">اشتباهات مهلک در یادگیری برنامه نویسی</h5>
+                                            </div>
+                                            <div class="card-footer border-2 d-flex justify-content-between pb-1">
+                                                <a href="#" class="nav-link text-primary fw-bold">برای گوش کردن کلیک کنید<i class="bi bi-caret-left-fill"></i></a>
+                                            </div>
+                                        </div>
+                                       <div class="w-100 d-flex justify-content-end img-position">
+                                        <img src="https://static.roocket.ir/images/cover/2024/4/23/sO8JExj8ppVbXlSFXBq3RyPas6r9l2FXNtcKyF2Q.jpg" alt="" class="w-25 w-10 mt-2 img-fluid not-hover">
+                                       </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-lg-4 position-relative">
+                                    <div class="card card-bg rounded d-flex flex-column justify-content-between text-white h-100">
+                                        <div class="card-header d-flex align-items-center border-0">
+                                            <span class="border border-1 border-black rounded text-13 p-2"><i class="bi bi-mic-fill text-primary"></i>شماره 1062</span>
+                                            <div class="d-flex ms-auto align-items-center text-10">
+                                                <span class="text-primary bg-dark rounded p-1 me-1"><i class="bi bi-file-earmark-text"></i></span>
+                                                <span class="text-sm rounded darknavbar p-1 me-1"><i class="bi bi-clock me-1"></i> 59:47</span>
+                                                <span class="red-dark rounded text-danger px-2 py-1"><i class="bi bi-heart me-1"></i>13</span>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">کار زیاد یا تعادل</h5>
+                                        </div>
+                                        <div class="card-footer border-2 d-flex justify-content-between pb-1">
+                                            <a href="#" class="nav-link text-primary fw-bold">برای گوش کردن کلیک کنید<i class="bi bi-caret-left-fill"></i></a>
+                                        </div>
+                                    </div>
+                                   <div class="w-100 d-flex justify-content-end img-position">
+                                    <img src="https://static.roocket.ir/images/cover/2024/3/30/3Dk60NYXa1xgIMbZ1Bw4BNoeH2DNOGIBB7wsyD9u.jpg" alt="" class="w-17 not-hover">
+                                   </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+     <!-- end rocket cast -->
+     <!-- start about rocket -->
+     <article class="py-5">
+        <div class="container-xl">
+            <div class="row mt-5">
+                <div class="col">
+                    <div class="accordion-flush" id="accordion-parent-2">
+                        <div class="accordion-item card-bg py-3 px-5 rounded border border-1 border-white">
+                            <h3 class="accordion-header mb-2 d-flex align-items-center">
+                                <button class="accordion-button text-white fs-4 fw-bold" data-bs-toggle="collapse" data-bs-target="#item-3">اموزش برنامه‌نویسی با راکت</button>
+                            </h3>
+                        
+                            <div class="collapse accordion-collapse" id="item-3" data-bs-parent="#carousel-parent-2">
+                                <div class="accordion-body text-white fs-5 fw-light lh-lg">
+                                    <p>برنامه نویسی یکی از حوزه‌های داغ در دنیای کنونی است و افراد بسیار زیادی تصمیم دارند تا فرایند آموزش برنامه نویسی را آغاز کنند. دلایل بسیار زیادی برای این موضوع وجود دارد که در ادامه به آن‌ها خواهیم پرداخت. اما این نکته را در ذهن داشته باشید که یادگیری و آموزش برنامه نویسی می‌تواند آینده شما را تضمین کرده و مسیر کاری مشخصی را برای شما ایجاد کند.</p> <br>
+                                    <p>در این مطلب از وبسایت راکت قصد داریم در ارتباط با ضرورت آموزش برنامه نویسی صحبت کنیم، تاریخچه‌ای کلی از آن را مورد ارزیابی قراردهیم، مسیری برای آموزش برنامه نویسی از صفر را به شما معرفی کنیم و همچنین از آموزش‌های رایگان و آموزش‌های مربوط به وب بگوییم. </p><br>
+                                    <h6 class="fs-2 fw-bold">مزایا یادگیری و آموزش برنامه نویسی</h6><br>
+                                    <p>دلایل زیادی برای یادگیری و آموزش برنامه نویسی وجود دارد. در اینجا چند مورد از مهم ترین آن‌ها آورده شده است:</p><br>
+                                    <p><span class="fw-bold">آینده شغلی:</span> برنامه نویسی یکی از پرتقاضاترین مهارت ها در بازار کار امروز است. طبق گزارشی از مجمع جهانی اقتصاد، مهارت های نرم افزاری و فناوری اطلاعات در صدر لیست مهارت هایی قرار دارند که بیشترین تقاضا را در آینده دارند. یادگیری برنامه نویسی می تواند به شما کمک کند تا در دنیای کار رقابتی پیشی بگیرید و شغلی با درآمد بالا و رضایت بخش پیدا کنید.</p><br>
+                                    <p><span class="fw-bold">خلاقیت:</span> برنامه نویسی یک فعالیت خلاقانه است. شما می توانید از آن برای ایجاد محصولات و خدمات جدید و نوآورانه استفاده کنید. یادگیری برنامه نویسی می تواند به شما کمک کند تا خلاقیت خود را بیان کنید و دنیا را به روشی جدید ببینید.</p><br>
+                                    <p><span class="fw-bold">حل مسئله:</span> برنامه نویسی یک مهارت حل مسئله است. شما باید بتوانید مشکلات را به قطعات کوچکتر تقسیم کنید و راه حل هایی برای آنها پیدا کنید. یادگیری برنامه نویسی می تواند به شما کمک کند تا مهارت های حل مسئله خود را بهبود ببخشید و در زندگی و کار خود موفق تر باشید.</p><br>
+                                    <p><span class="fw-bold">تفکر منطقی:</span> برنامه نویسی یک فعالیت منطقی است. شما باید بتوانید از منطق برای فکر کردن به مشکلات و یافتن راه حل های مناسب استفاده کنید. یادگیری برنامه نویسی می تواند به شما کمک کند تا تفکر منطقی خود را بهبود ببخشید و در زندگی و کار خود تصمیمات بهتری بگیرید.</p><br>
+                                    <p><span class="fw-bold">یادگیری سایر مهارت ها:</span> برنامه نویسی می تواند به شما کمک کند تا سایر مهارت ها را نیز یاد بگیرید. به عنوان مثال، یادگیری برنامه نویسی می تواند به شما کمک کند تا مهارت های ریاضی، علوم کامپیوتر و زبان انگلیسی خود را بهبود ببخشید.</p><br>
+                                    <h6 class="fs-2 fw-bold">تاریخچه مختصری از برنامه نویسی</h6><br>
+                                    <p>تاریخچه برنامه نویسی به دهه 1940 میلادی باز می گردد. در آن زمان، رایانه ها بسیار بزرگ و گران بودند و فقط در دسترس دانشگاه‌ها و شرکت‌های بزرگ بودند. برنامه نویسی علمی بود که تنها در اختیار افراد بسیار محدودی بود و تنها آن‌ها می‌توانستند فرایند آموزش برنامه نویسی را طی کنند.</p><br>
+                                    <h6 class="fw-bold fs-2">اولین زبان برنامه نویسی سطح بالا</h6><br>
+                                    <p>اولین زبان برنامه نویسی، Plankalkül  نام داشت که توسط Konrad Zuse در سال های 1942 تا 1945 توسعه یافت. این زبان یک زبان برنامه نویسی سطح بالا بود که از مفهوم تابع استفاده می کرد. Plankalkül هرگز به صورت گسترده‌ای استفاده نشد، اما تأثیر زیادی بر توسعه زبان‌های برنامه نویسی بعدی داشت.</p><br>
+                                    <h6 class="fw-bold fs-2">ظهور زبان های برنامه نویسی سطح بالا</h6><br>
+                                    <p>در دهه 1950، زبان های برنامه نویسی سطح بالا شروع به توسعه یافتند. زبان های برنامه نویسی سطح بالا برای انسان ها قابل خواندن تر هستند و استفاده از آنها آسان تر است. برخی از اولین زبان های برنامه نویسی سطح بالا عبارتند از:</p><br>
+                                    <p>FORTRAN (1957) : یک زبان برنامه نویسی برای محاسبات علمی</p><br>
+                                    <p>COBOL (1959): یک زبان برنامه نویسی برای سیستم های تجاری</p>
+                                    <p>LISP (1958) : یک زبان برنامه نویسی برای هوش مصنوعی</p>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </article>
+     <!-- end about rocket -->
+     <footer class="mt-5">
+        <div class="container-xl d-flex flex-column">
+        <div class="row d-flex align-items-center text-center my-3">
+            <div class="col-lg-2">
+                <svg class="hidden dark:inline-block" width="203" height="46" viewBox="0 0 203 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M56.7434 30.6068L50.6089 24.5795H42.3797V30.6068H38.7888V9.56836H54.125C57.6037 9.56836 60.5587 13.0179 60.5587 17.074C60.5587 20.3719 58.5388 23.4044 55.7708 24.3142L55.4716 24.4279L61.7183 30.6447H56.7434V30.6068ZM42.3797 20.5235H53.9754C55.5838 20.5235 57.0052 18.8935 57.0052 17.036C57.0052 15.1407 55.6212 13.5865 53.9754 13.5865H42.3797V20.5235Z" fill="white"></path>
+                <path d="M75.448 31.0177C68.0418 31.0177 63.7776 27.227 63.7776 20.5933V19.5319C63.7776 12.8981 68.0418 9.10742 75.448 9.10742C82.8542 9.10742 87.1184 12.8981 87.1184 19.5319V20.5933C87.1184 27.227 82.8542 31.0177 75.448 31.0177ZM75.448 13.3909C71.2586 13.3909 67.3685 14.1491 67.3685 19.6456V20.5174C67.3685 26.014 71.2586 26.7721 75.448 26.7721C79.4504 26.7721 83.5649 26.014 83.5649 20.5174V19.6456C83.5649 14.1112 79.4504 13.3909 75.448 13.3909Z" fill="white"></path>
+                <path d="M101.743 31.0177C94.3364 31.0177 90.0723 27.227 90.0723 20.5933V19.5319C90.0723 12.8981 94.3364 9.10742 101.743 9.10742C109.149 9.10742 113.413 12.8981 113.413 19.5319V20.5933C113.413 27.227 109.186 31.0177 101.743 31.0177ZM101.743 13.3909C97.5533 13.3909 93.6632 14.1491 93.6632 19.6456V20.5174C93.6632 26.014 97.5533 26.7721 101.743 26.7721C105.745 26.7721 109.86 26.014 109.86 20.5174V19.6456C109.86 14.1112 105.782 13.3909 101.743 13.3909Z" fill="white"></path>
+                <path d="M191.441 30.6068V13.8139H183.511V9.56836H202.962V13.8139H195.032V30.6068H191.441Z" fill="white"></path>
+                <path d="M128.003 30.944C124.524 30.944 116.445 29.9205 116.445 20.5954V19.4961C116.445 10.171 124.524 9.14746 128.003 9.14746C133.352 9.14746 135.372 10.2468 135.746 10.5121V14.0375C134.885 13.7342 131.893 12.7865 128.003 12.7865C122.916 12.7865 120.223 15.1368 120.223 19.6098V20.5196C120.223 24.9926 122.916 27.3428 128.003 27.3428C131.893 27.3428 134.885 26.3952 135.746 26.0919V29.6173C135.372 29.8447 133.352 30.944 128.003 30.944Z" fill="white"></path>
+                <path d="M153.475 30.4963L142.964 20.6405V30.4963H139.187V9.64746H142.964V19.6928L153.251 9.64746L159.348 9.64746L148.239 20.0719L159.984 30.4963H153.475Z" fill="white"></path>
+                <path d="M162.152 30.4963V9.64746H180.593V13.2107H165.93V18.3661H179.508V21.7398H165.93V26.8952H180.593V30.4963H162.152Z" fill="white"></path>
+                <path d="M200.232 5.17373H199.259V7.44816H199.035V5.17373H198.025V4.94629H200.269V5.17373H200.232Z" fill="white"></path>
+                <path d="M202.738 4.94629H203V7.44816H202.776V5.74234C202.776 5.70443 202.776 5.59071 202.776 5.36327C202.551 5.85606 202.289 6.38676 201.953 6.95537H201.728C201.392 6.42467 201.092 5.89397 200.868 5.36327C200.868 5.43908 200.868 5.59071 200.868 5.74234V7.44816H200.644V4.94629H200.905C201.13 5.47699 201.429 6.0835 201.803 6.72792C202.215 6.0835 202.514 5.47699 202.738 4.94629Z" fill="white"></path>
+                <path d="M14.4049 45.0127L9.16821 37.2796L14.4049 31.9727L19.6042 37.2796L14.4049 45.0127Z" fill="#FF8429"></path>
+                <path d="M28.802 15.5175L28.802 33.0306L21.6202 27.4961C21.6202 27.4961 22.4057 20.6729 22.5553 15.4796C22.6301 12.9019 20.2736 10.7412 14.401 7.82237C8.56579 10.7791 6.20926 12.9398 6.28407 15.5175C6.39629 20.6729 7.2192 27.534 7.2192 27.534L0 33.0306L0 15.5175C0 12.4091 1.30918 9.604 3.85274 7.21586C5.64819 5.51004 8.11693 3.91795 11.8949 2.0605L14.4384 0.80957L16.982 2.0605C20.7225 3.91795 23.2286 5.51004 25.0241 7.21586C27.5302 9.604 28.802 12.4091 28.802 15.5175Z" fill="#E81C4D"></path>
+                </svg></div>
+            <div class="col border border-1 border-white d-none d-lg-block ms-5" style="height: 1px;"></div>
+            <div class="col-lg-3 my-3 text-lg-end text-md-center">
+                <a href="#" class="nav-link ">
+                    <i class="bi bi-facebook p-2 rounded bg-primary text-white me-1"></i>
+                    <i class="bi bi-youtube p-2 rounded bg-primary text-white me-1"></i>
+                    <i class="bi bi-twitter p-2 rounded bg-primary text-white me-1"></i>
+                    <i class="bi bi-telegram p-2 rounded bg-primary text-white me-1"></i>
+                    <i class="bi bi-instagram p-2 rounded bg-primary text-white me-1"></i>
+                </a>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-between text-white text-start">
+            <div class="col-lg-6 d-flex flex-column justify-content-center">
+                <div class="row">
+                    <div class="col">
+                        <h2 class="fs-5 fw-bold text-center text-lg-start">درباره راکت</h2>
+                        <p class=" fs-6 lh-lg w-75 mx-auto mx-lg-0 my-4">
+                            راکت یکی از پرتلاش‌ترین و بروزترین وبسایت های آموزشی در سطح ایران است که همیشه تلاش کرده
+                            تا بتواند جدیدترین و بروزترین مقالات و دوره‌های آموزشی را در اختیار علاقه‌مندان ایرانی
+                            قرار دهد. تبدیل کردن برنامه نویسان ایرانی به بهترین برنامه نویسان جهان هدف ماست.</p>
+                            <a href="#" class="nav-link text-primary mb-5 fw-bold d-flex justify-content-center justify-content-lg-start">مشاهده اطلاعات مسیر یادگیری<i class="bi bi-caret-left-fill"></i></a>
+                            <div class="input-group rounded">
+                                <input type="text" class="form-control border border-1" placeholder="برای اطلاع از جدیدترین اخبار و جشنوراه‌های تخفیفی راکت ایمیل خود را وارد کنید.">
+                                <button class="btn btn-primary">ثبت ایمیل</button>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg text-center mt-5 mt-lg-0 text-lg-start">
+                <h4>بخش های سایت</h4>
+                <a href="" class="nav-link mt-3">
+                    <li class="nav-item mb-2">قوانین و مقررات</li>
+                    <li class="nav-item mb-2">مدرسان راکت</li>
+                    <li class="nav-item mb-2">درباره راکت</li>
+                    <li class="nav-item mb-2">ارتباط با ما</li>
+                </a>
+            </div>
+            <div class="col-lg">
+                <h4>ارتباط با ما</h4>
+                <ul class="navbar-nav">
+                    <li class="nav-item my-3 d-flex justify-content-between align-items-center"><span class="d-flex"><i class="bi bi-envelope me-2 text-primary"></i>ایمیل</span><a href="" class="nav-link">info@roocket.ir</a></li>
+                    <li class="nav-item d-flex justify-content-between align-items-center"><span class="d-flex"><i class="bi bi-send me-2 text-primary"></i>آی دی تلگرام</span> <a href="#" class="nav-link">@roocket_support</a></li>
+                </ul>
+                <div class="d-flex mt-5">
+                    <img src="https://roocket.ir/img/pic/samandehi.png?width=90&height=110" alt="" class="img-fluid me-3">
+                    <img src="https://roocket.ir/img/pic/enamad.png?width=100&height=110" alt="" class="img-fluid">
+                </div>
+            </div>
+        </div>
+        </div>
+     </footer>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
