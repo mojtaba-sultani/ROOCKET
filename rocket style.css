@@ -3,6 +3,13 @@
     padding: 0;
     margin: 0;
 }
+nav input{
+    background-color:rgba(27,49,76,1) !important;
+}
+nav button.sign-in {
+    width:5%;
+    background-color: rgba(27, 49, 76, 1) !important;
+}
 body{
     background-color: rgba(12,36,63,1);
 }
@@ -21,7 +28,6 @@ h3 button.accordion-button{
 
 input::placeholder{
     color: white !important;
-    background-color: rgba(12,36,63,1);
 }
 input.form-control{
     background-color:rgba(12,36,63,1);
