@@ -71,6 +71,9 @@ button.red-dark:hover{
 .card img:hover{
     transform: scale(1.1);
 }
+section.card-hover .card:hover{
+    background-color:rgba(128,128,128,0.1) !important;
+}
 .card-body h6:hover
 {
 color: aqua !important;
