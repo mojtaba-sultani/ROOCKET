@@ -66,6 +66,9 @@ span.light-gray:hover{
     background-color: gray !important;
     color:white;
 }
+.bg-instagram{
+    background:linear-gradient(to left,#f4662a,#d52a78,#8f33c4);
+}
 a.mx-auto.light-blue{
     background-color:rgba(96,156,255,1);
 }
