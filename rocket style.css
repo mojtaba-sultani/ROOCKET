@@ -46,6 +46,9 @@ color:lightslategray;
 .card-bg{
     background-color: rgba(27 ,52 ,77,1);
 }
+.card-bg-time{
+    background-color: #60749614;
+}
 .position-absolute-img{
 position:relative;
 bottom:30px;
@@ -55,12 +58,15 @@ p.card-text.text-sm
 font-size:0.875rem !important;
     
 }
-button.fw-lighter:hover{
+.light-blue{
+    color:rgba(96,156,255,1);
+}
+button.red-dark:hover{
     background-color: rgba(255,45,32,1);
     color: white !important;
 }
 .red-dark{
-    background-color: rgb(121, 14, 8);
+    background-color:rgba(232,28,77,.2);
 }
 .card img:hover{
     transform: scale(1.1);
