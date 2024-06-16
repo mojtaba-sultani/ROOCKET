@@ -58,6 +58,21 @@ p.card-text.text-sm
 font-size:0.875rem !important;
     
 }
+span.light-gray:hover{
+    background-color:rgba(96,156,255,1);
+    color: white !important;
+}
+.light-gray-h:hover{
+    background-color: gray !important;
+    color:white;
+}
+a.mx-auto.light-blue{
+    background-color:rgba(96,156,255,1);
+}
+a.mx-auto.light-blue:hover{
+    background-color:transparent;
+    border:1px solid white;
+}
 .light-blue{
     color:rgba(96,156,255,1);
 }
@@ -92,6 +107,9 @@ color: aqua !important;
     
    a.hover-a:hover{
     color: gray !important;
+    }
+    .light-gray{
+        background-color:rgba(96,156,255,0.1)
     }
 .carousel-indicators{
         position: absolute;
@@ -156,7 +174,7 @@ color: aqua !important;
     }
     @media(min-width:992px){
         .w-lg-50{
-            width:50% !important;
+            width:40% !important;
         }
         .position-relative-lg{
             position: relative;
