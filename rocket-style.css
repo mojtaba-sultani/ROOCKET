@@ -62,6 +62,17 @@ span.light-gray:hover{
     background-color:rgba(96,156,255,1);
     color: white !important;
 }
+footer button.light-blue{
+    background-color:rgba(96,156,255,1);
+    color: white !important;
+}
+footer button.light-gray:hover{
+    background-color:black;
+    color: white !important;
+}
+footer input::placeholder{
+    color: gray !important;
+}
 .light-gray-h:hover{
     background-color: gray !important;
     color:white;
